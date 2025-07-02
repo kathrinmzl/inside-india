@@ -1,5 +1,15 @@
-p {background-color: brown;}
+/* Import "Roboto" and "Bodoni Moda SC" Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* CSS Variables */
+:root {
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Bodoni Moda SC", cursive;
+    --primary-color: #004d23 ; /* dark green */
+    --secondary-color: #5c834e ; /* light green */
+    --highlight-color: #17938c ; /* dark blue */
+    --highlight-color-light: #74c0a2; /* light blue */
+}
 
 /* grid visualisation CSS for testing */
 
