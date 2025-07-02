@@ -1,10 +1,10 @@
-/* Import "Roboto" and "Bodoni Moda SC" Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Import "Roboto" and "Asar" Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Asar&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CSS Variables */
 :root {
     --primary-font: "Roboto", sans-serif;
-    --secondary-font: "Bodoni Moda SC", cursive;
+    --secondary-font: "Asar", cursive;
     --primary-color: #004d23 ; /* dark green */
     --secondary-color: #5c834e ; /* light green */
     --highlight-color: #17938c ; /* dark blue */
@@ -13,7 +13,7 @@
 
 /* grid visualisation CSS for testing */
 
-.container,
+/* .container,
 .row {
     border: 2px solid black;
 }
@@ -21,4 +21,27 @@
 .col-12 {
     border: 2px solid white;
     background-color: lightgray;
+} */
+
+/* Global styles */
+body {
+    font-family: var(--primary-font);
+    padding-top: 56px; /* pushes the top of the header down under fixed navbar */
+}
+
+h1, h2, h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+
+/* Navbar */
+#navbar {
+    background-color: var(--primary-color);
+}
+
+/* Footer */
+#footer {
+    background-color: var(--primary-color);
+    color: white;
 }
