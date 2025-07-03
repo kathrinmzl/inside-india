@@ -5,10 +5,22 @@
 :root {
     --primary-font: "Roboto", sans-serif;
     --secondary-font: "Asar", cursive;
-    --primary-color: #004d23 ; /* dark green */
-    --secondary-color: #5c834e ; /* light green */
-    --highlight-color: #17938c ; /* dark blue */
-    --highlight-color-light: #74c0a2; /* light blue */
+    --primary-color: #361309 ; /* dark brown */
+    --secondary-color: #843913 ; /* medium brown */
+    --highlight-color: #a66946; /* light brown */
+    --highlight-color-light: #c3cdcc ; /* light grey */
+    --highlight-color-light-transparent: #c3cdcc99 ; /* light grey */
+
+/* 
+    #c3cdcc (light grey)
+
+#843913 (medium brown)
+
+#361309 (dark brown)
+
+#a66946 (light brown)
+
+#788485 (dark grey) */
 }
 
 /* grid visualisation CSS for testing */
@@ -37,11 +49,31 @@ h1, h2, h3 {
 
 /* Navbar */
 #navbar {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
+
+/* Header */
+#hero {
+    background: url(../images/hero-home.jpg) 50% 75%/cover no-repeat white; 
+    min-height: 300px;
+    padding: 5% 7%;
+}
+
+#cover-text {
+    /* Last rgbs value sets the opacity so it is semi transparent*/
+    background-color: var(--highlight-color-light-transparent);
+    /* font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%; 
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px; */
+}
+
 
 /* Footer */
 #footer {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
 }
