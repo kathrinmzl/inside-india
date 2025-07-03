@@ -41,7 +41,7 @@ body {
     padding-top: 56px; /* pushes the top of the header down under fixed navbar */
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
 }
@@ -97,10 +97,22 @@ h1, h2, h3 {
 }
 
 /* Main - Section: Introduction */
-#intro p {
-    background-color: var(--highlight-color-light);
-    min-height: 50px;
-    padding: 2%;
+#intro .row {
+  min-height: 300px; /* or whatever height you want */
+}
+
+#intro-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle-img-bg {
+  width: 200px;  /* fixed size */
+  height: 200px; /* fixed size */
+  background: url("../images/intro-image.jpg") no-repeat center center / cover;
+  border-radius: 50%;
+  margin: 0 auto 20px auto; /* centers block horizontally */
 }
 
 /* Main - Section: Tours */
@@ -112,7 +124,6 @@ h1, h2, h3 {
 }
 
 #tours h4 {
-    font-family: var(--secondary-font);
     text-transform: uppercase;
 }
 
