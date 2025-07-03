@@ -55,15 +55,18 @@ h1, h2, h3, h4 {
 .custom-button-filled {
     background-color: var(--highlight-color);
     border:  var(--highlight-color);
-    font-size: 120%;
     color: white;
-    padding: 2% 5%;
 }
 
 .custom-button-filled:hover {
     background-color: var(--secondary-color);
     border:  var(--secondary-color);
     color: white;
+}
+
+.button-big {
+    padding: 2% 5%;
+    font-size: 120%;
 }
 
 .custom-button-outlined {
