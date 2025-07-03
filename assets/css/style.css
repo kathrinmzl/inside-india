@@ -103,6 +103,30 @@ h1, h2, h3 {
     padding: 2%;
 }
 
+/* Main - Section: Tours */
+#tours .card {
+  height: 200px;
+  border: none;
+  background-size: cover;
+  background-position: center;
+}
+
+#tours h4 {
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+}
+
+#tour1 {
+  background-image: url(../images/home-tour-1.jpg); 
+}
+
+#tour2 {
+  background-image: url(../images/home-tour-2.jpg); 
+}
+
+#tour3 {
+  background-image: url(../images/home-tour-3.jpg); 
+}
 
 /* Footer */
 #footer {
