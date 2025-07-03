@@ -9,7 +9,7 @@
     --secondary-color: #843913 ; /* medium brown */
     --highlight-color: #a66946; /* light brown */
     --highlight-color-light: #c3cdcc ; /* light grey */
-    --highlight-color-light-transparent: #c3cdcc99 ; /* light grey */
+    --highlight-color-light-transparent: #c3cdcc99 ; /* light grey transparent */
 
 /* 
     #c3cdcc (light grey)
@@ -46,10 +46,16 @@ h1, h2, h3 {
     color: var(--primary-color);
 }
 
+.sub-heading-color {
+    color: var(--highlight-color-light);
+}
+
+
 /* Buttons */
 .custom-button-filled {
     background-color: var(--highlight-color);
     border:  var(--highlight-color);
+    font-size: 120%;
     color: white;
     padding: 2% 5%;
 }
@@ -95,4 +101,18 @@ h1, h2, h3 {
 #footer {
     background-color: var(--secondary-color);
     color: white;
+    text-align: center;
+}
+
+#footer i {
+    color: var(--highlight-color);
+    font-size: 200%;
+}
+
+#footer .social-links i{
+    padding: 0 20px
+}
+
+#footer .social-links i:hover {
+    color: var(--highlight-color-light);
 }
