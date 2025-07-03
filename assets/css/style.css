@@ -46,29 +46,48 @@ h1, h2, h3 {
     color: var(--primary-color);
 }
 
+/* Buttons */
+.custom-button-filled {
+    background-color: var(--highlight-color);
+    border:  var(--highlight-color);
+    color: white;
+    padding: 2% 5%;
+}
+
+.custom-button-filled:hover {
+    background-color: var(--secondary-color);
+    border:  var(--secondary-color);
+    color: white;
+}
+
+.custom-button-outlined {
+    border:  2px solid white;
+    color: white;
+}
+
+.custom-button-outlined:hover {
+    background-color: var(--highlight-color);
+    color: white;
+}
+
 
 /* Navbar */
 #navbar {
     background-color: var(--secondary-color);
 }
 
-/* Header */
+/* Header - Hero Image*/
 #hero {
     background: url(../images/hero-home.jpg) 50% 75%/cover no-repeat white; 
     min-height: 300px;
     padding: 5% 7%;
 }
 
-#cover-text {
-    /* Last rgbs value sets the opacity so it is semi transparent*/
+#hero-text {
+    /* set transparent background for hero text */
     background-color: var(--highlight-color-light-transparent);
-    /* font-size: 130%;
-    position: absolute;
-    bottom: 30px;
-    width: 80%; 
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 10px; */
+    min-height: 100px;
+    padding: 2%;
 }
 
 
