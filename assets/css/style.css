@@ -50,6 +50,14 @@ h1, h2, h3, h4 {
     color: var(--highlight-color-light);
 }
 
+.dropdown-menu {
+     background-color: var(--highlight-color);
+}
+
+.dropdown-menu .dropdown-item:hover {
+     color: var(--secondary-color);
+     background-color: var(--highlight-color);
+}
 
 /* Buttons */
 .custom-button-filled {
