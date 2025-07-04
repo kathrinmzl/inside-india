@@ -103,6 +103,7 @@ h1, h2, h3, h4 {
 #hero-text {
     /* set transparent background for hero text */
     background-color: var(--highlight-color-light-transparent);
+    font-weight: 500;
     min-height: 100px;
     padding: 2%;
 }
