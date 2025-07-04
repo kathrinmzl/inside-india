@@ -178,6 +178,7 @@ h1, h2, h3, h4 {
 
 #facts-spiritual {
     background-color: var(--highlight-color-light-transparent);
+    padding: 20px;
 }
 
 /* Success Page */
