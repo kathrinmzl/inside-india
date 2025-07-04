@@ -104,7 +104,8 @@ h1, h2, h3, h4 {
     /* set transparent background for hero text */
     background-color: var(--highlight-color-light-transparent);
     font-weight: 500;
-    min-height: 100px;
+    /* min-height: 100px; */
+    margin: 10%;
     padding: 2%;
 }
 
@@ -153,6 +154,21 @@ h1, h2, h3, h4 {
 
 #tour3 {
   background-image: url(../images/home-tour-3.jpg); 
+}
+
+/* Tour - Spiritual */
+#spiritual-hero {
+    background: url(../images/spiritual-hero.jpg) 50% 40%/cover no-repeat white; 
+    min-height: 300px;
+    padding: 5% 7%;
+}
+
+#spiritual-hero-text {
+    /* set transparent background for hero text */
+    background-color: var(--highlight-color-light-transparent);
+    /* min-height: 100px; */
+    margin: 10%;
+    padding: 2%;
 }
 
 /* Success Page */
