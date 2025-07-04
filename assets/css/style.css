@@ -25,7 +25,7 @@
 
 /* grid visualisation CSS for testing */
 
- /* .container,
+  /* .container,
 .row {
     border: 2px solid black;
 }
@@ -33,7 +33,7 @@
 .col-12 {
     border: 2px solid white;
     background-color: lightgray;
-}  */
+}   */
 
 /* Global styles */
 body {
@@ -140,6 +140,18 @@ h1, h2, h3, h4 {
 
 #tour3 {
   background-image: url(../images/home-tour-3.jpg); 
+}
+
+/* Success Page */
+#success {
+    padding: 4rem;
+    background: url("../images/success-img.jpg") no-repeat center center / cover;
+    color: white;
+    max-width: 600px;
+}
+
+#success h1 {
+    color: white;
 }
 
 /* Footer */

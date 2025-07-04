@@ -20,7 +20,6 @@
 </head>
 
 <!-- Classes on body set to work with mt-auto on the footer to ensure it always stays at the bottom of the page -->
-
 <body class="d-flex flex-column min-vh-100">
     <!-- navbar-expand-sm: navbar reduces to hamburger menu only on mobile screens -->
     <nav id="navbar" class="navbar navbar-expand-sm fixed-top" data-bs-theme="dark">
@@ -36,7 +35,7 @@
                 <!-- ms-auto: adds margin at the "start" of the element, so the menu items will be placed on the right. The opposite is me-auto. -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -58,75 +57,18 @@
         </div>
     </nav>
 
-    <!-- Hero image -->
-    <header id="hero" class="container">
-        <section class="row">
-            <div class="col-12 text-center">
-                <!-- Tagline -->
-                <h1 id="hero-text" class="display-4 my-4">Experience India from Inside</h1>
-                <!-- Booking Button -->
-                <a href="booking.html" class="btn custom-button-filled button-big my-4">Book your tour now!</a>
-            </div>
-        </section>
-    </header>
-
+    <!-- Success message shown after successfully submitting a form -->
     <main>
-        <!-- Section: Introduction -->
-        <section id="intro" class="container mb-4">
-            <div class="row text-center justify-content-center align-items-center">
-                <div class="col-12 my-4">
-                    <h2>Small group trips to the country of colours and diversity</h2>
-                </div>
-                <div class="col-12 col-md-4">
-                    <p>Shared adventures with likeminded travellers</p>
-                </div>
-                <div class="col-12 col-md-4">
-                        <div id="intro-img">
-                            <div id="circle-img-bg"></div>
-                        </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <p>Curated tours for cultural or spiritual immersion and adventure seekers</p>
-                </div>
+        <section class="container text-center">
+            <div class="row justify-content-center m-4">
+            <div id="success" class="col-12 rounded">
+                <h1 class="display-3">Thank you!</h1>
+                <p class="lead">Your submission has been received</p>
+                <a href="index.html" class="btn custom-button-outlined mt-4">Go back to the home page</a>
             </div>
+        </div>
         </section>
-
-        <!-- Section: Tours -->
-        <section id="tours" class="container my-4">
-            <div class="row text-center justify-content-center g-3">
-                <div class="col-12">
-                    <h2>Our Tours</h2>
-                </div>
-                <div class="col-12 col-md-4">
-                    <a href="#" class="text-decoration-none">
-                        <div id="tour1" class="card text-bg-dark">
-                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                            <h4 class="card-title">Spiritual</h4>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-4">
-                    <a href="#" class="text-decoration-none">
-                        <div id="tour2" class="card text-bg-dark">
-                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                            <h4 class="card-title">Cultural</h4>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-4">
-                    <a href="#" class="text-decoration-none">
-                        <div id="tour3" class="card text-bg-dark">
-                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                            <h4 class="card-title">Adventure</h4>
-                        </div>
-                    </div>
-                    </a>
-                    
-                </div>
-            </div>
-        </section>
+        
     </main>
 
     <!-- Footer with contact info and social links -->
