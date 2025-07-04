@@ -65,8 +65,8 @@ h1, h2, h3, h4 {
 }
 
 .button-big {
-    padding: 2% 5%;
-    font-size: 120%;
+    padding: 1% 3%;
+    font-size: 110%;
 }
 
 .custom-button-outlined {
@@ -119,6 +119,10 @@ h1, h2, h3, h4 {
 }
 
 /* Main - Section: Tours */
+#tours {
+    padding-top: 1rem;
+}
+
 #tours .card {
   height: 200px;
   border: none;
