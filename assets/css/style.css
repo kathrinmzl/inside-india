@@ -177,7 +177,7 @@ h1, h2, h3, h4 {
 }
 
 #facts-spiritual {
-    background-color: var(--highlight-color-light-transparent);
+    background-color: #f8f9fa; /*light grey background */
     padding: 20px;
 }
 
