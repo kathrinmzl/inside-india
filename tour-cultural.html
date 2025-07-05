@@ -2,14 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Inside India is a travel company that offers curated travel packages to solo travellers 
-    who want to travel around India with a small group of likeminded travellers. Visit us to book your next adventure!">
-    <title>Inside India | Home</title>
-
-    <!-- Todo: Add Favicons as Logo? -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Cultural Tour is a transformative journey through sacred landscapes, ancient rituals, and the vibrant soul of Northern India. 
+      Visit us to book your next adventure!" />
+    <title>Inside India | Cultural Tour</title>
 
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,6 +19,7 @@
 <!-- Classes on body set to work with mt-auto on the footer to ensure it always stays at the bottom of the page -->
 
 <body class="d-flex flex-column min-vh-100">
+    <!-- Navbar -->
     <!-- navbar-expand-sm: navbar reduces to hamburger menu only on mobile screens -->
     <nav id="navbar" class="navbar navbar-expand-sm fixed-top" data-bs-theme="dark">
         <!-- "container" class to keep the navbar elements in line with the rest of the content -->
@@ -43,8 +41,8 @@
                             aria-expanded="false" aria-current="page">Tours</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="tour-spiritual.html">Spiritual</a></li>
-                            <li><a class="dropdown-item" href="#">Tour 2</a></li>
-                            <li><a class="dropdown-item" href="#">Tour 3</a></li>
+                            <li><a class="dropdown-item" href="tour-cultural.html">Cultural</a></li>
+                            <li><a class="dropdown-item" href="tour-adventure.html">Adventure</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -63,7 +61,7 @@
         <section class="row justify-content-center">
             <div class="col-12 text-center">
                 <!-- Tagline -->
-                <h1 id="spiritual-hero-text" class="my-4">Spiritual Immersion in North India</h1>
+                <h1 id="spiritual-hero-text" class="my-4">Awaken your Soul</h1>
                 <!-- Booking Button -->
                 <a href="booking.html" class="btn custom-button-filled button-big my-4">Book your tour now!</a>
             </div>
@@ -71,91 +69,223 @@
     </header>
 
     <main>
-        <!-- Section: Introduction -->
-        <section id="intro-spiritual" class="container my-4">
-            <div class="row text-center">
-                <div class="col-12 mb-3">
-                    <h2>Intro heading</h2>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <p class="lead">Highlight 1</p>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <p class="lead">Highlight 2</p>
-                </div>
-                <div class="col-12 col-md-4 mb-3">
-                    <p class="lead">Highlight 3</p>
+        <!-- Section: Facts -->
+        <section class="container my-4">
+            <div class="row">
+                <div class="col-12 mb-1 text-center">
+                    <h2>
+                        Embark on a sacred journey through India's most profound spiritual
+                        landscapes
+                    </h2>
                 </div>
             </div>
-        </section>
+            <div class="row rounded p-3" id="facts-spiritual">
 
-        <!-- Section: Facts -->
-        <section id="facts-spiritual" class="container my-4">
-            <div class="row">
                 <div class="col-6 col-md-4">
-                    <p>Fact 1</p>
+                    <p>
+                        <strong>Duration:</strong><br />
+                        21 days
+                    </p>
                 </div>
                 <div class="col-6 col-md-4">
-                    <p>Fact 2</p>
+                    <p>
+                        <strong>Start - End:</strong><br />
+                        Dehli - Dehli
+                    </p>
                 </div>
                 <div class="col-6 col-md-4">
-                    <p>Fact 3</p>
+                    <p>
+                        <strong>Next dates:</strong><br />
+                        11.10.2025 - 01.11.2025
+                    </p>
                 </div>
                 <div class="col-6 col-md-4">
-                    <p>Fact 4</p>
+                    <p>
+                        <strong>Accomodation:</strong><br />
+                        Hostels, Ashram, Overnight trains or busses
+                    </p>
                 </div>
                 <div class="col-6 col-md-4">
-                    <p>Fact 5</p>
+                    <p>
+                        <strong>Meals:</strong><br />
+                        Breakfast, Lunch, Dinner
+                    </p>
                 </div>
                 <div class="col-6 col-md-4">
-                    <p>Fact 6</p>
+                    <p>
+                        <strong>Price:</strong><br />
+                        1500 € excl. Flights
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- Section: Details -->
-        <section id="details-spiritual" class="container my-4">
+        <section id="details-spiritual" class="container px-md-0">
+            <!-- px-md-0 removes side padding on md screens -->
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <p>Details</p>
+                <!-- Tour description in list form -->
+                <div class="col-12 col-md-6 my-4">
+                    <h3 class="col-12">Tour Details</h3>
+                    <details>
+                        <summary class="lead mb-2">
+                            Delhi – Arrival and Immersion into the City’s Vibrancy
+                        </summary>
+                        <ul>
+                            <li>Experience the bustling chaos of Delhi with a street walking tour through <strong>Chandi
+                                    Chowk</strong>, tasting the best street food and exploring the world’s largest spice
+                                market</li>
+                            <li>Visit iconic landmarks like <strong>India Gate</strong> and the colonial-era boulevards
+                            </li>
+                            <li>Enjoy a relaxed start to your journey by soaking in the city’s energy before heading
+                                deeper into India’s culture</li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary class="lead mb-2">
+                            Agra – Home of the Taj Mahal
+                        </summary>
+                        <ul>
+                            <li>Witness the breathtaking sunrise over the iconic Taj Mahal, marveling at its timeless
+                                beauty and romantic legends</li>
+                            <li>Explore the Agra Fort, a Mughal masterpiece</li>
+                            <li>Visit Mehtab Bagh for a scenic view of the Taj</li>
+                            <li>Optional marble inlay workshop experience</li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary class="lead mb-2">
+                            Jaipur – The Pink City
+                        </summary>
+                        <ul>
+                            <li>Kick off your adventure with an exhilarating auto rickshaw tour through Jaipur’s vibrant
+                                streets, discovering colorful markets and iconic landmarks</li>
+                            <li>Discover the majestic Amber Fort</li>
+                            <li>Walk through the City Palace and Jantar Mantar observatory</li>
+                            <li>Snap photos at the iconic Hawa Mahal (Palace of Winds)</li>
+                            <li>Visit a traditional block-printing workshop</li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary class="lead mb-2">
+                            Pushkar – Sacred Town on the Edge of the Desert
+                        </summary>
+                        <ul>
+                            <li>Visit the Brahma Temple, one of the few in the world</li>
+                            <li>Browse the vibrant Pushkar Bazaar</li>
+                            <li>Experience the legendary Pushkar Camel Fair – a colorful desert festival of livestock
+                                trading, folk performances, and cultural celebration</li>
+                            <li>Attend an Aarti at the holy lake – a spiritual ritual at sunset</li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary class="lead mb-2">
+                            Jodhpur – The Blue City
+                        </summary>
+                        <ul>
+                            <li>Tour the imposing Mehrangarh Fort</li>
+                            <li>Explore the winding streets of the blue-painted old town</li>
+                            <li>Join a local family who runs a spice shop for an immersive cooking class, discovering
+                                authentic Rajasthani flavors and secret recipes</li>
+                            <li>Sip chai with locals at a rooftop café overlooking the fort</li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary class="lead mb-2">
+                            Jaisalmer – The Golden City in the Thar Desert
+                        </summary>
+                        <ul>
+                            <li>Visit a desert village to learn about local life and enjoy a traditional folk dance
+                                performance</li>
+                            <li>Explore the golden Jaisalmer Fort, a living fort still inhabited</li>
+                            <li>Admire intricate carvings at Patwon Ki Haveli</li>
+                            <li>Take a camel safari into the Thar Desert with a night under the stars</li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary class="lead mb-2">
+                            Udaipur – The City of Lakes
+                        </summary>
+                        <ul>
+                            <li>Boat ride on Lake Pichola past the Lake Palace</li>
+                            <li>Visit the regal City Palace complex</li>
+                            <li>Take a sunrise scooter tour to Badi Lake – a serene escape with panoramic hill views
+                            </li>
+                            <li>Enjoy a traditional Rajasthani thali dinner with sunset views</li>
+                        </ul>
+                    </details>
+
                 </div>
 
-                <div id="carouselExampleIndicators" class="carousel slide col-12 col-md-6">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                <!-- Carousel with tour photos and Booking button -->
+                <div class="col-12 col-md-6 mb-4 my-md-4">
+                    <!-- Carousel -->
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <img src="assets/images/spiritual-car-sadhu.jpg" class="d-block w-100"
+                                    alt="Sadhu in Rishikesh" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/spiritual-car-ganga.jpg" class="d-block w-100"
+                                    alt="Ganga Aarte in Haridwar" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/spiritual-car-yoga.jpg" class="d-block w-100"
+                                    alt="Group of people practicing yoga at the Ganges" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/spiritual-car-amritsar.jpg" class="d-block w-100"
+                                    alt="View of the Golgen Temple in Amritsar" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/spiritual-car-buddhist.jpg" class="d-block w-100"
+                                    alt="Buddhist prayer rolls in Dharamshala" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/spiritual-car-spices.jpg" class="d-block w-100"
+                                    alt="Spice Market in Dehli" />
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="..." class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                        </div>
+                    <!-- Booking Button -->
+                    <div class="text-center">
+                        <a href="booking.html" class="btn custom-button-filled button-big my-4">Book your tour now!</a>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
 
             </div>
         </section>
-
-
     </main>
 
     <!-- Footer with contact info and social links -->
@@ -165,20 +295,16 @@
             <div class="row">
                 <!-- Contact info -->
                 <div class="col-12 col-md-6">
-                    <h3 class="sub-heading-color mt-2">
-                        Contact Us
-                    </h3>
+                    <h3 class="sub-heading-color mt-2">Contact Us</h3>
                     <p>
-                        <i class="fa-brands fa-whatsapp"></i> +49 123 45 6789 0 <br>
+                        <i class="fa-brands fa-whatsapp"></i> +49 123 45 6789 0 <br />
                         <a href="" class="btn custom-button-outlined mt-3" data-bs-toggle="modal"
                             data-bs-target="#contactModal">Contact form</a>
                     </p>
                 </div>
                 <!-- Social links -->
                 <div class="col-12 col-md-6">
-                    <h3 class="sub-heading-color mt-2">
-                        Check out our socials
-                    </h3>
+                    <h3 class="sub-heading-color mt-2">Check out our socials</h3>
                     <div class="social-links my-4">
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener"
                             aria-label="Visit our Instagram page (opens in new tab)"><i
@@ -189,7 +315,6 @@
                         <a href="https://www.x.com/" target="_blank" rel="noopener"
                             aria-label="Visit our X feed (opens in new tab)"><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -200,13 +325,14 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-4" id="contactModalLabel">
-                        Contact Us
-                    </h1>
+                    <h1 class="modal-title fs-4" id="contactModalLabel">Contact Us</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Leave us a message if you have any questions regarding our tours or want to give us feedback!</p>
+                    <p>
+                        Leave us a message if you have any questions regarding our tours
+                        or want to give us feedback!
+                    </p>
                     <!-- Add form here -->
                     <form class="row g-3" action="success.html" method="get">
                         <!-- Show success page after submitting the form -->
@@ -232,7 +358,9 @@
                         </div>
 
                         <div class="col-12 mb-4">
-                            <button type="submit" class="btn custom-button-filled">Send message</button>
+                            <button type="submit" class="btn custom-button-filled">
+                                Send message
+                            </button>
                         </div>
                     </form>
                 </div>
