@@ -128,7 +128,7 @@ h1, h2, h3, h4 {
 #circle-img-bg {
   width: 200px;  /* fixed size */
   height: 200px; /* fixed size */
-  background: url("../images/intro-image.jpg") no-repeat center center / cover;
+  background: url("../images/intro-image.jpg") no-repeat 40% center / cover;
   border-radius: 50%;
   margin: 0 auto 20px auto; /* centers block horizontally */
 }
@@ -149,15 +149,15 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
 }
 
-#tour1 {
+#tour-spiritual {
   background-image: url(../images/home-tour-1.jpg); 
 }
 
-#tour2 {
+#tour-cultural {
   background-image: url(../images/home-tour-2.jpg); 
 }
 
-#tour3 {
+#tour-adventure {
   background-image: url(../images/home-tour-3.jpg); 
 }
 
