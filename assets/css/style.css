@@ -189,6 +189,14 @@ h1, h2, h3, h4 {
     padding: 5% 7%;
 }
 
+/* Tour - Adventure */
+#adventure-hero {
+    background: url(../images/adventure-hero.jpg) 50% 40%/cover no-repeat white; 
+    min-height: 300px;
+    padding: 5% 7%;
+}
+
+
 
 
 cultural-hero
