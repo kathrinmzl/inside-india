@@ -161,14 +161,8 @@ h1, h2, h3, h4 {
   background-image: url(../images/home-tour-3.jpg); 
 }
 
-/* Tour - Spiritual */
-#spiritual-hero {
-    background: url(../images/spiritual-hero.jpg) 50% 40%/cover no-repeat white; 
-    min-height: 300px;
-    padding: 5% 7%;
-}
-
-#spiritual-hero-text {
+/* Tours */
+.tour-hero-text-bg {
     /* set transparent background for hero text */
     background-color: var(--highlight-color-light-transparent);
     /* min-height: 100px; */
@@ -176,10 +170,28 @@ h1, h2, h3, h4 {
     padding: 2%;
 }
 
-#facts-spiritual {
+.tour-facts-bg {
     background-color: #f8f9fa; /*light grey background */
     padding: 20px;
 }
+
+/* Tour - Spiritual */
+#spiritual-hero {
+    background: url(../images/spiritual-hero.jpg) 50% 40%/cover no-repeat white; 
+    min-height: 300px;
+    padding: 5% 7%;
+}
+
+/* Tour - Cultural */
+#cultural-hero {
+    background: url(../images/cultural-hero.jpg) 50% 40%/cover no-repeat white; 
+    min-height: 300px;
+    padding: 5% 7%;
+}
+
+
+
+cultural-hero
 
 /* Success Page */
 #success {
