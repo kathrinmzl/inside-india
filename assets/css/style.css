@@ -98,7 +98,7 @@ h1, h2, h3, h4 {
 
 /* Header - Hero Image*/
 #hero {
-    background: url(../images/hero-home.jpg) 50% 75%/cover no-repeat white; 
+    background: url(../images/hero-home.webp) 50% 75%/cover no-repeat white; 
     min-height: 300px;
     padding: 5% 7%;
 }
@@ -131,7 +131,7 @@ h1, h2, h3, h4 {
 #circle-img-bg {
   width: 200px;  
   height: 200px;
-  background: url(../images/intro-image.jpg) no-repeat 40% center / cover;
+  background: url(../images/intro-image.webp) no-repeat 40% center / cover;
   border-radius: 50%;
   margin: 0 auto 20px auto; /* centers block horizontally */
 }
@@ -153,15 +153,15 @@ h1, h2, h3, h4 {
 }
 
 #tour-spiritual {
-  background-image: url(../images/home-tour-1.jpg); 
+  background-image: url(../images/home-tour-1.webp); 
 }
 
 #tour-cultural {
-  background-image: url(../images/home-tour-2.jpg); 
+  background-image: url(../images/home-tour-2.webp); 
 }
 
 #tour-adventure {
-  background-image: url(../images/home-tour-3.jpg); 
+  background-image: url(../images/home-tour-3.webp); 
 }
 
 /* Tours */
@@ -179,21 +179,21 @@ h1, h2, h3, h4 {
 
 /* Tour - Spiritual */
 #spiritual-hero {
-    background: url(../images/spiritual-hero.jpg) 50% 40%/cover no-repeat white; 
+    background: url(../images/spiritual-hero.webp) 50% 40%/cover no-repeat white; 
     min-height: 300px;
     padding: 5% 7%;
 }
 
 /* Tour - Cultural */
 #cultural-hero {
-    background: url(../images/cultural-hero.jpg) 50% 40%/cover no-repeat white; 
+    background: url(../images/cultural-hero.webp) 50% 40%/cover no-repeat white; 
     min-height: 300px;
     padding: 5% 7%;
 }
 
 /* Tour - Adventure */
 #adventure-hero {
-    background: url(../images/adventure-hero.jpg) 50% 40%/cover no-repeat white; 
+    background: url(../images/adventure-hero.webp) 50% 40%/cover no-repeat white; 
     min-height: 300px;
     padding: 5% 7%;
 }
@@ -202,7 +202,7 @@ h1, h2, h3, h4 {
 /* Success Page */
 #success {
     padding: 4rem;
-    background: url(../images/success-img.jpg) no-repeat center center / cover;
+    background: url(../images/success-img.webp) no-repeat center center / cover;
     color: white;
     max-width: 600px;
 }
