@@ -7,7 +7,7 @@
     --secondary-font: "Asar", cursive;
     --primary-color: #361309 ; /* dark brown */
     --secondary-color: #843913 ; /* medium brown */
-    --highlight-color: #a66946; /* light brown */
+    --highlight-color: #976141; /* light brown */
     --highlight-color-light: #c3cdcc ; /* light grey */
     --highlight-color-light-transparent: #c3cdcc99 ; /* light grey transparent */
     --text-background-color: #ebebeb; /*light grey background */
@@ -52,15 +52,6 @@ h1, h2, h3, h4 {
     color: var(--primary-color);
 }
 
-.dropdown-menu {
-     background-color: var(--highlight-color);
-}
-
-.dropdown-menu .dropdown-item:hover {
-     color: var(--secondary-color);
-     background-color: var(--highlight-color);
-}
-
 /* Buttons */
 /* General button style setup taken from Boardwalk games project */
 .custom-button-filled {
@@ -94,6 +85,37 @@ h1, h2, h3, h4 {
 /* Navbar */
 .navbar {
     background-color: var(--secondary-color);
+}
+
+/* Change the color of nav links for better contrast */
+.navbar .nav-link {
+  color: white; 
+}
+
+/* Underline active links */
+.navbar .nav-link.active,
+.navbar .nav-link.show {
+  border-bottom: 1px solid white; /* underline */
+  padding-bottom: 2px; /* creates space between text and underline */
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  font-weight: bold;
+}
+
+.dropdown-menu {
+     background-color: var(--highlight-color);
+}
+
+.dropdown-menu .dropdown-item {
+     color: white;
+     background-color: var(--highlight-color);
+}
+
+.dropdown-menu .dropdown-item:hover {
+     font-weight: bold;
+     background-color: var(--highlight-color);
 }
 
 /* Header - Hero Image*/
