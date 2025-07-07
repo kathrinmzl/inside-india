@@ -61,7 +61,7 @@ h1, h2, h3, h4 {
 }
 
 /* Buttons */
-/* Button style setup taken from Boardwalk games project */
+/* General button style setup taken from Boardwalk games project */
 .custom-button-filled {
     background-color: var(--highlight-color);
     border:  var(--highlight-color);
@@ -106,14 +106,13 @@ h1, h2, h3, h4 {
     /* set transparent background for hero text */
     background-color: var(--highlight-color-light-transparent);
     font-weight: 500;
-    /* min-height: 100px; */
     margin: 10%;
     padding: 2%;
 }
 
 /* Main - Section: Introduction */
 #intro .row {
-  min-height: 300px; /* or whatever height you want */
+  min-height: 300px; 
 }
 
 #intro-image {
@@ -123,8 +122,8 @@ h1, h2, h3, h4 {
 }
 
 #circle-img-bg {
-  width: 200px;  /* fixed size */
-  height: 200px; /* fixed size */
+  width: 200px;  
+  height: 200px;
   background: url("../images/intro-image.jpg") no-repeat 40% center / cover;
   border-radius: 50%;
   margin: 0 auto 20px auto; /* centers block horizontally */
@@ -162,7 +161,6 @@ h1, h2, h3, h4 {
 .tour-hero-text-bg {
     /* set transparent background for hero text */
     background-color: var(--highlight-color-light-transparent);
-    /* min-height: 100px; */
     margin: 10%;
     padding: 2%;
 }
@@ -193,10 +191,6 @@ h1, h2, h3, h4 {
     padding: 5% 7%;
 }
 
-
-
-
-cultural-hero
 
 /* Success Page */
 #success {

@@ -21,6 +21,8 @@
 <!-- Classes on body set to work with mt-auto on the footer to ensure it always stays at the bottom of the page -->
 
 <body class="d-flex flex-column min-vh-100">
+    <!-- Navbar -->
+    <!-- General navbar setup taken from Boardwalk games project-->
     <!-- navbar-expand-sm: navbar reduces to hamburger menu only on mobile screens -->
     <nav class="navbar navbar-expand-sm fixed-top" data-bs-theme="dark">
         <!-- "container" class to keep the navbar elements in line with the rest of the content -->
@@ -80,9 +82,10 @@
                     <p class="lead">Shared adventures with likeminded travellers</p>
                 </div>
                 <div class="col-12 col-md-4">
-                        <div id="intro-img">
-                            <div id="circle-img-bg"></div>
-                        </div>
+                    <!-- General idea of circular photo taken from Love Running project -->
+                    <div id="intro-img">
+                        <div id="circle-img-bg"></div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-4">
                     <p class="lead">Curated tours for cultural or spiritual immersion and adventure seekers</p>
@@ -99,36 +102,37 @@
                 <div class="col-12 col-md-4">
                     <a href="tour-spiritual.html" class="text-decoration-none">
                         <div id="tour-spiritual" class="card text-bg-dark">
-                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                            <h4 class="card-title">Spiritual</h4>
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <h4 class="card-title">Spiritual</h4>
+                            </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-12 col-md-4">
                     <a href="tour-cultural.html" class="text-decoration-none">
                         <div id="tour-cultural" class="card text-bg-dark">
-                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                            <h4 class="card-title">Cultural</h4>
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <h4 class="card-title">Cultural</h4>
+                            </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="col-12 col-md-4">
                     <a href="tour-adventure.html" class="text-decoration-none">
                         <div id="tour-adventure" class="card text-bg-dark">
-                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                            <h4 class="card-title">Adventure</h4>
+                            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                <h4 class="card-title">Adventure</h4>
+                            </div>
                         </div>
-                    </div>
                     </a>
-                    
+
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer with contact info and social links -->
+    <!-- General footer setup taken from Boardwalk games project-->
     <!-- mt-auto added to push footer to the bottom of the page -->
     <footer id="footer" class="mt-auto">
         <div class="container">
@@ -140,7 +144,8 @@
                     </h3>
                     <p>
                         <i class="fa-brands fa-whatsapp"></i> +49 123 45 6789 0 <br>
-                        <a href="" class="btn custom-button-outlined mt-3" data-bs-toggle="modal" data-bs-target="#contactModal" >Contact form</a>
+                        <a href="" class="btn custom-button-outlined mt-3" data-bs-toggle="modal"
+                            data-bs-target="#contactModal">Contact form</a>
                     </p>
                 </div>
                 <!-- Social links -->
@@ -176,29 +181,28 @@
                 </div>
                 <div class="modal-body">
                     <p>Leave us a message if you have any questions regarding our tours or want to give us feedback!</p>
-                    <!-- Add form here -->
-                    <form class="row g-3" action="success.html" method="get"> <!-- Show success page after submitting the form -->
+                    <!-- Form -->
+                    <form class="row g-3" action="success.html" method="get">
+                        <!-- Show success page after submitting the form -->
                         <div class="col-md-4">
                             <label for="contact-name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="contact-name" name="contact-name" required/>
+                            <input type="text" class="form-control" id="contact-name" name="contact-name" required />
                         </div>
-
                         <div class="col-md-4">
                             <label for="contact-email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="contact-email" name="contact-email" required />
                         </div>
-
-                         <div class="col-md-4">
+                        <div class="col-md-4">
                             <label for="contact-phone" class="form-label">Phone Number</label>
-                            <input type="text" class="form-control" id="contact-phone" name="contact-phone" required/>
+                            <input type="text" class="form-control" id="contact-phone" name="contact-phone" required />
                         </div>
-
                         <div class="col-12">
-                                <label for="contact-message" class="form-label">Message</label>
-                                <textarea class="form-control" rows="6" id="contact-message" name="contact-message" required></textarea>
-                            </div>
-
-                        <div class="col-12 mb-4">
+                            <label for="contact-message" class="form-label">Message</label>
+                            <textarea class="form-control" rows="6" id="contact-message" name="contact-message"
+                                required></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <div class="col-12 mb-4 text-end">
                             <button type="submit" class="btn custom-button-filled">Send message</button>
                         </div>
                     </form>
