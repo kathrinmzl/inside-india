@@ -118,19 +118,31 @@ h1, h2, h3, h4 {
      background-color: var(--highlight-color);
 }
 
-/* Header - Hero Image*/
-#hero {
-    background: url(../images/hero-home.webp) 50% 75%/cover no-repeat white; 
-    min-height: 300px;
-    padding: 5% 7%;
+.hero {
+  height: 250px; /* Adjust this as needed */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 7%; /* Horizontal only — avoids height bloating */
+  color: white;
 }
 
-#hero-text {
-    /* set transparent background for hero text */
-    background-color: var(--highlight-color-light-transparent);
-    font-weight: 500;
-    margin: 10%;
-    padding: 2%;
+.hero-text-bg {
+  background-color: var(--highlight-color-light-transparent);
+  padding: 1rem 2rem;
+  margin: 0; /* Removes excessive space */
+  display: inline-block;
+}
+
+/* Header - Hero Image*/
+#hero-home {
+  background: url(../images/hero-home.webp) center center / cover no-repeat;
+}
+
+#hero .btn {
+  margin-top: 1rem;
 }
 
 /* Main - Section: Introduction */
@@ -186,38 +198,19 @@ h1, h2, h3, h4 {
   background-image: url(../images/home-tour-3.webp); 
 }
 
-/* Tours */
-.tour-hero-text-bg {
-    /* set transparent background for hero text */
-    background-color: var(--highlight-color-light-transparent);
-    margin: 10%;
-    padding: 2%;
-}
-
-.tour-facts-bg {
-    background-color: var(--text-background-color);
-    padding: 20px;
-}
-
 /* Tour - Spiritual */
-#spiritual-hero {
+#hero-spiritual {
     background: url(../images/spiritual-hero.webp) 50% 40%/cover no-repeat white; 
-    min-height: 300px;
-    padding: 5% 7%;
 }
 
 /* Tour - Cultural */
-#cultural-hero {
+#hero-cultural {
     background: url(../images/cultural-hero.webp) 50% 40%/cover no-repeat white; 
-    min-height: 300px;
-    padding: 5% 7%;
 }
 
 /* Tour - Adventure */
-#adventure-hero {
+#hero-adventure {
     background: url(../images/adventure-hero.webp) 50% 40%/cover no-repeat white; 
-    min-height: 300px;
-    padding: 5% 7%;
 }
 
 
@@ -260,4 +253,16 @@ h1, h2, h3, h4 {
 
 #footer .social-links i:hover {
     color: var(--highlight-color-light);
+}
+
+
+@media (max-width: 768px) {
+  #hero {
+    height: 280px;
+  }
+
+  #hero-text {
+    font-size: 2.5rem;
+    padding: 0.75rem 1.5rem;
+  }
 }
