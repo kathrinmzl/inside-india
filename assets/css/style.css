@@ -51,10 +51,6 @@ h1, h2, h3, h4 {
     color: var(--primary-color);
 }
 
-.sub-heading-color {
-    color: var(--highlight-color-light);
-}
-
 .dropdown-menu {
      background-color: var(--highlight-color);
 }
@@ -218,6 +214,10 @@ cultural-hero
     background-color: var(--secondary-color);
     color: white;
     text-align: center;
+}
+
+.footer-heading-color {
+    color: var(--highlight-color-light);
 }
 
 #footer i {
