@@ -196,7 +196,7 @@ h1, h2, h3, h4 {
 /* Success Page */
 #success {
     padding: 4rem;
-    background: url("../images/success-img.jpg") no-repeat center center / cover;
+    background: url(../images/success-img.jpg) no-repeat center center / cover;
     color: white;
     max-width: 600px;
 }
