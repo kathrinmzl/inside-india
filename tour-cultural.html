@@ -290,22 +290,27 @@
     </main>
 
     <!-- Footer with contact info and social links -->
+    <!-- General footer setup taken from Boardwalk games project-->
     <!-- mt-auto added to push footer to the bottom of the page -->
     <footer id="footer" class="mt-auto">
         <div class="container">
             <div class="row">
                 <!-- Contact info -->
                 <div class="col-12 col-md-6">
-                    <h3 class="footer-heading-color mt-2">Contact Us</h3>
+                    <h3 class="footer-heading-color mt-2">
+                        Contact Us
+                    </h3>
                     <p>
-                        <i class="fa-brands fa-whatsapp"></i> +49 123 45 6789 0 <br />
+                        <i class="fa-brands fa-whatsapp"></i> +49 123 45 6789 0 <br>
                         <a href="" class="btn custom-button-outlined mt-3" data-bs-toggle="modal"
                             data-bs-target="#contactModal">Contact form</a>
                     </p>
                 </div>
                 <!-- Social links -->
                 <div class="col-12 col-md-6">
-                    <h3 class="footer-heading-color mt-2">Check out our socials</h3>
+                    <h3 class="footer-heading-color mt-2">
+                        Check out our socials
+                    </h3>
                     <div class="social-links my-4">
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener"
                             aria-label="Visit our Instagram page (opens in new tab)"><i
@@ -316,6 +321,7 @@
                         <a href="https://www.x.com/" target="_blank" rel="noopener"
                             aria-label="Visit our X feed (opens in new tab)"><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -326,38 +332,32 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-4" id="contactModalLabel">Contact Us</h1>
+                    <h1 class="modal-title fs-4" id="contactModalLabel">
+                        Contact Us
+                    </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>
-                        Leave us a message if you have any questions regarding our tours
-                        or want to give us feedback!
-                    </p>
-                    <!-- Add form here -->
-                    <form class="row g-3" action="success.html" method="get">
-                        <!-- Show success page after submitting the form -->
+                    <p>Leave us a message if you have any questions regarding our tours or want to give us feedback!</p>
+                    <!-- Form -->
+                    <form class="row g-3" action="success.html" method="get"> <!-- Show success page after submitting the form -->
                         <div class="col-md-4">
                             <label for="contact-name" class="form-label">Full Name</label>
                             <input type="text" class="form-control" id="contact-name" name="contact-name" required />
                         </div>
-
                         <div class="col-md-4">
                             <label for="contact-email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="contact-email" name="contact-email" required />
                         </div>
-
                         <div class="col-md-4">
                             <label for="contact-phone" class="form-label">Phone Number</label>
                             <input type="text" class="form-control" id="contact-phone" name="contact-phone" required />
                         </div>
-
                         <div class="col-12">
                             <label for="contact-message" class="form-label">Message</label>
                             <textarea class="form-control" rows="6" id="contact-message" name="contact-message"
                                 required></textarea>
                         </div>
-
                         <!-- Submit Button -->
                         <div class="col-12 mb-4 text-end">
                             <button type="submit" class="btn custom-button-filled">Send message</button>

@@ -125,7 +125,7 @@ h1, h2, h3, h4 {
 #circle-img-bg {
   width: 200px;  
   height: 200px;
-  background: url("../images/intro-image.jpg") no-repeat 40% center / cover;
+  background: url(../images/intro-image.jpg) no-repeat 40% center / cover;
   border-radius: 50%;
   margin: 0 auto 20px auto; /* centers block horizontally */
 }
