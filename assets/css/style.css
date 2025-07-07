@@ -10,6 +10,7 @@
     --highlight-color: #a66946; /* light brown */
     --highlight-color-light: #c3cdcc ; /* light grey */
     --highlight-color-light-transparent: #c3cdcc99 ; /* light grey transparent */
+    --text-background-color: #ebebeb; /*light grey background */
 
 /* 
     #c3cdcc (light grey)
@@ -166,7 +167,7 @@ h1, h2, h3, h4 {
 }
 
 .tour-facts-bg {
-    background-color: #f8f9fa; /*light grey background */
+    background-color: var(--text-background-color);
     padding: 20px;
 }
 
@@ -202,6 +203,11 @@ h1, h2, h3, h4 {
 
 #success h1 {
     color: white;
+}
+
+/* Booking page */
+#booking-form {
+    background-color:  var(--text-background-color);
 }
 
 /* Footer */
