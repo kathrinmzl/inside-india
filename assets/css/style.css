@@ -121,7 +121,7 @@ h1, h2, h3, h4 {
   min-height: 300px; 
 }
 
-#intro-image {
+#intro-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -246,12 +246,14 @@ h1, h2, h3, h4 {
   /* Adjust hero image height to improve performance of mobile screens */
   .hero {
   height: 250px; 
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 7%; /* Horizontal only — avoids height bloating */
-  color: white;
+}
+
+#circle-img-bg {
+  width: 150px;  
+  height: 150px;
+}
+
+#tours .card {
+  height: 150px;
 }
 }
