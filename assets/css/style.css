@@ -239,3 +239,19 @@ h1, h2, h3, h4 {
   background: url("../images/hero-home.webp") center 40% / cover no-repeat;
 }
 }
+
+
+/* Adjust styles for small screens */
+@media screen and (max-width: 576px) {
+  /* Adjust hero image height to improve performance of mobile screens */
+  .hero {
+  height: 250px; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 7%; /* Horizontal only — avoids height bloating */
+  color: white;
+}
+}
