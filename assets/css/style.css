@@ -110,7 +110,6 @@ h1, h2, h3, h4 {
      background-color: var(--highlight-color);
 }
 
-
 /* Header - Hero Image*/
 #hero-home {
   background: url("../images/hero-home.webp") 50% 45% / cover no-repeat;
@@ -205,8 +204,6 @@ h1, h2, h3, h4 {
   display: block;
 }
 
-
-
 /* Success Page */
 #success {
     padding: 4rem;
@@ -256,6 +253,14 @@ h1, h2, h3, h4 {
 }
 }
 
+/* Adjust styles for medium screens */
+@media screen and (max-width: 768px) {
+  /* Restrict height of the carousel items */
+#carouselExampleIndicators .carousel-item img {
+  max-height: 500px;
+}
+}
+
 /* Adjust styles for small screens */
 @media screen and (max-width: 576px) {
   /* Adjust hero image height to improve performance of mobile screens */
@@ -263,17 +268,33 @@ h1, h2, h3, h4 {
   height: 250px; 
 }
 
+ /* Adjust height of circular image */
 #circle-img-bg {
   width: 150px;  
   height: 150px;
 }
 
+ /* Adjust height of tour cards */
 #tours .card {
   height: 150px;
 }
-/* Adjust the box so that it doesnt stick to the side of the screen */
+
+/* Adjust the facts text field so that the grey border doesnt stick to the side of the screen */
 .tour-facts-bg {
     margin: 0 1px;
     padding: 2px;
+}
+
+/* Restrict height of the carousel items */
+#carouselExampleIndicators .carousel-item img {
+  max-height: 420px;
+}
+}
+
+/* Adjust styles for extra small screens */
+@media screen and (max-width: 420px) {
+/* Restrict height of the carousel items */
+#carouselExampleIndicators .carousel-item img {
+  max-height: 300px;
 }
 }
