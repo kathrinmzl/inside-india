@@ -83,7 +83,6 @@ The website was created for educational purposes only.
 - In the footer there will be links to socials and a Whatsapp number
 - On the home page there will be a section displaying testimonials from previous attendees (could-have)
 - There will be a signup link for a newsletter to receive news on upcoming tours (could-have)
-    
 
 - - -
 
@@ -138,18 +137,18 @@ Google Fonts was used for the following fonts:
 ### Imagery 
 I chose the images on the website to fit the topic of each page but also to fit in the colour scheme to have a harmonious look and feel. 
 
-The icon I used is a map of India with the colours of the indian flag, to reflect the point that the travel website is only for tours through India. For the icon that's shown in the navbar I additionally included the company name, to make the logo more unique.
+The icon I used is a map of India with the colours of the indian flag, to reflect the point that the travel website is only for tours through India. For the logo that's shown in the navbar I additionally included the company name, to make the logo more unique.
 
 ### Features
 
 The website is comprised of six pages, five of which are accessible from the navigation menu (home page, three tour pages & booking page). The sixth page is a success page which is shown once a user submits either the contact form or the booking form. The features fulfill the must-have and should-have user stories.
 
 #### Navigation
-To follow the mobile-first approach, the page links in the navigation bar have been implemented as a hamburger menu on mobile screens. The icon serves as a link to the home page. Additionally the navbar is sticky to improve UX. This way the user can easily navigate the website and click on another page from anywhere.
+To follow the mobile-first approach, the page links in the navigation bar have been implemented as a hamburger menu on mobile screens. The logo serves as a link to the home page. Additionally the navbar is sticky to improve UX. This way the user can easily navigate the website and click on another page from anywhere.
 
 ![Navbar for small screens](docs/features/navbar-small.png)
 
-For medium or larger screens the navbar shows the different available pages. The active page is indicated by an underscore and the page links also have an `:hover` effect.
+For medium or larger screens the navbar shows the different available pages. The active page is indicated by an underscore and the page links also have a `:hover` effect.
 
 As the tour pages belong together in terms of their content, they have been grouped together in a dropdown menu.
 
@@ -160,12 +159,12 @@ The navbar features also a link to a contact modal as well as a link to the book
 #### Header
 The home page and the tour pages each include a hero image in their header, which supports the topic of the respective page.
 
-All of the hero sections include a catch phrase as h1, which have a light transparent background to improve readability. They also feature a booking button as call to action.
+All of the hero sections include a catch phrase as `h1`, which have a light transparent background to improve readability. They also feature a booking button as call to action.
 
 ![Header with hero image](docs/features/hero.png)
 
 #### Footer
-The footer includes contact and social media information. In the contact section the visitor finds a Whatsapp phone number and a link to a contact form. In the social media section there are links to Facebook, Instagram and X.
+The footer includes contact and social media information. In the contact section the visitor finds a Whatsapp number and a link to a contact form. In the social media section there are links to Facebook, Instagram and X.
 
 ![Footer](docs/features/footer.png)
 
@@ -176,9 +175,11 @@ The home page includes a section showcasing that it is a website for small curat
 ![Home page](docs/features/home-page.png)
 
 #### Tour pages
-For each tour package there is a separate page displaying detailed information about the trips’ itineraries, the costs of each tour and a gallery. 
+For each tour package there is a separate page displaying general facts about the tour, detailed information about the trips’ itineraries and a gallery of tour highlights. 
 
-The pages are divided into a "facts" section, with an overview of the most important information, and a "tour details" section with a detail section for each place on the itinerary. Next to the details is a carousel with each six photos representing steps in the itinerary. Below the carousel is another booking button.
+The pages are divided into a "facts" section, with an overview of the most important information like the price and dates, and a "tour details" section with a detail section for each place on the itinerary. Next to the details there is a carousel with each six photos representing steps in the itinerary. 
+
+Below the carousel is another booking button.
 
 ![Tour page](docs/features/tour-page.png)
 
@@ -206,7 +207,7 @@ The success page only shows if either the contact or the booking form are succes
 - - -
 
 ## Future Features
-So far the website includes all necessary features to create a minimum viable product. However, there is room for improvement and further features. 
+So far the website includes all necessary features to create a minimum viable product. However, there is room for improvement and further features:
 
 * The contact and booking forms both use a GET parameter to simulate submitting the form. To fully function this could be changed to a POST request to send the form data to an E-Mail address
 
@@ -224,9 +225,9 @@ So far the website includes all necessary features to create a minimum viable pr
 
 I manually tested all pages of the website throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along. I mainly checked for responsiveness on different screen sizes here.
 
-When I had my first full version of the website I deployed it to github pages to test it in deployment as well. I realised I should have done that earlier because I realised that the performance wasn't too good, because some of the images took a while to load.
+When I had my first full version of the website I deployed it to github pages to test it in deployment as well. I realised I should have done that earlier because the performance wasn't good enough, as some of the images took a while to load.
 
-I also tested the website in Microsoft Edge, as this is the only other browser I have installed on my laptop.
+I also tested the deployed website in Microsoft Edge, as this is the only other browser I have installed on my laptop and on my own mobile phone, Google Pixel 7.
 
 Besides testing the responsiveness of the website I also tested the following:
 
@@ -245,18 +246,17 @@ When I tested the first full version of the website I got the following errors/w
 - Home/Tour pages
 ![HTML Error Report 1](docs/testing/html-error-report-1.png)
   - Trailing slash on void elements has no effect and interacts badly with unquoted attribute values
-    - I solved this by deleteing all trailing slashes
+    - I solved this by deleting all trailing slashes
   - Consider using the `h1` element as a top-level heading only 
     -  I changed the `h1` in the modal to `h2` for all pages
 
 - Booking page
 ![HTML Error Report 2](docs/testing/html-error-report-2.png)
   - Duplicate ID: contact-name, contact-email, contact-phone
-    - Fixed duplicate IDs
+    - Fixed duplicate IDs by renaming the IDs for the booking form
 - Success Page: no errors or warnings
-After fixing errors/warnings, there are no further error/warnings on any of the pages
 
-I retested the HTML after changing the code due to further test results and retested the final version again. The result showed some trailing slash warnings again, which I corrected.
+After changing the code due to further test results and retested the final HTML version. The result showed some trailing slash warnings again, which I corrected.
 
 #### CSS
 The [Jigsaw W3C validator](https://jigsaw.w3.org/css-validator/) was used to validate the style.css file. 
@@ -265,7 +265,7 @@ When I tested the first full version of the website I got no errors.
 
 I also used the  [Auto Prefixer](https://autoprefixer.github.io/) on the final CSS Code.
 
-I retested the CSS after changing the code due to further test results and retested the final version again. The result no errors again.
+After changing the code due to further test results and retested the final CSS version. The result showed no errors again.
 
 ### Lighthouse
 
@@ -273,13 +273,11 @@ I used Lighthouse within the Chrome Developer Tools to allow me to test the perf
 
 The initial test of the first version of the website (desktop) showed overall good scores for Accessibility and Best practices, but a rather low score for Performance. Especially the home page had a very low performance score of 42%. The tour pages ranged between 70-74%, and the booking and success page had a good performance with scores of 95-100%.
 
-Initial Home Page Result for desktop screens:
+- Initial Home Page Result for desktop screens:
+  ![Lighthouse Result Home Initial](docs/testing/lighthouse-home-initial-desktop.png)
 
-![Lighthouse Result Home Initial](docs/testing/lighthouse-home-initial-desktop.png)
-
-Initial Adventure Tour Page Result for desktop screens:
-
-![Lighthouse Result Adventure Tour Initial](docs/testing/lighthouse-adventure-initial-desktop.png)
+- Initial Adventure Tour Page Result for desktop screens:
+  ![Lighthouse Result Adventure Tour Initial](docs/testing/lighthouse-adventure-initial-desktop.png)
 
 [Remaining Lighthouse results can be found here](docs/testing)
 
@@ -293,33 +291,31 @@ The results for the accessibility score were mostly the same over all pages. Lig
 
 #### Best Practices
 The results for the best practices score were mostly the same over all pages. Lighthouse showed the following warning:
-"Use of deprecated APIs “Found an `h1` tag within an `article`, `aside`, `nav`, or `section` which does not have a specified font-size. The size of this heading text will be changing in this browser in the near future.“
+"Use of deprecated APIs - Found an `h1` tag within an `article`, `aside`, `nav`, or `section` which does not have a specified font-size. The size of this heading text will be changing in this browser in the near future.“
 
-As the `h1` was inside the header element, the use of a section wasn’t neccessary for semantic reasons, so I changed it so a div for all hero images.
+As the `h1` was inside the header element, the use of a section wasn’t neccessary for semantic reasons, so I changed it to a div for all hero images.
 
 #### Performance 
-The performance was especially bad on the home page, but showed the same warning for all of the pages. Lighthouse showed that among others the bad performance was due to high LCP scores caused by large image sizes.
+The performance was especially bad on the home page, but showed the same warning for all of the pages. Lighthouse showed that among others the bad performance was due to high LCP scores caused by large image sizes of the hero images.
 
 I first tried to fix this by minimizing image sizes using [tinypng](https://tinypng.com/). This didn't improve the score enough, so I also transformed the jpg files into webp format by using [Birme](https://www.birme.net/). 
 
-For the home page the performance score was still too bad and the hero image still seemed to be the problem, because Lighthouse showed a bad LCP score for it. So I tried changing the code in a way that the hero image wouldn't be loaded as a background image in style.css, but that it would be directly displayed as an `img` in index.html. This way you can also preload the image, which is supposed to improve performance as well. Unfortunately this still didn't help.
+For the home page the performance score was still too bad and the hero image still seemed to be the problem, because Lighthouse still showed a bad LCP score for it. So I tried changing the code in a way that the hero image wouldn't be loaded as a background image in style.css, but that it would be directly displayed as an `img` in index.html. This way you can also preload the image, which is supposed to improve performance as well. Unfortunately this still didn't help.
 
 In the end I realised that I could minimize the size of all images even more if I download them in a "small" size directly from [Unsplash](https://unsplash.com/). Initially I had downloaded them using their original size. After minimizing and turning the images into webp format, this turned out to help a lot for desktop screens.
 
 Additionally, I changed the height of the hero images to 250px for small screens compared to 300px on larger screens, to improve performance results for mobiles as well. For the same reason I also adjusted the height of the circular image and the cards on the home page. In the end the performance reached a score of 79% for the home page on mobile screens and 100% for desktop screens.
 
 #### Final Scores
-Finally here are some scores for the final website.
+Finally here are some scores for the final website. For the final test I also included the results for SEO.
 
-Final Home Page Result for mobile and desktop screens:
+- Final Home Page Result for mobile and desktop screens:
+  ![Lighthouse Result Home Final Mobile](docs/testing/lighthouse-home-final-mobile.png)
+  ![Lighthouse Result Home Final Desktop](docs/testing/lighthouse-home-final-desktop.png)
 
-![Lighthouse Result Home Final Mobile](docs/testing/lighthouse-home-final-mobile.png)
-![Lighthouse Result Home Final Desktop](docs/testing/lighthouse-home-final-desktop.png)
-
-Final Adventure Tour Page Result for mobile and desktop screens:
-
-![Lighthouse Result Adventure Tour Final Mobile](docs/testing/lighthouse-adventure-final-mobile.png)
-![Lighthouse Result Adventure Tour Final Desktop](docs/testing/lighthouse-adventure-final-desktop.png)
+- Final Adventure Tour Page Result for mobile and desktop screens:
+  ![Lighthouse Result Adventure Tour Final Mobile](docs/testing/lighthouse-adventure-final-mobile.png)
+  ![Lighthouse Result Adventure Tour Final Desktop](docs/testing/lighthouse-adventure-final-desktop.png)
 
 [Remaining Lighthouse results can be found here](docs/testing)
 
@@ -388,6 +384,8 @@ Github Pages was used to deploy the live website. The instructions to achieve th
 5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
 6. Click Save. Your live Github Pages site is now deployed at the URL shown.
 
+Link to the deployed website: [https://kathrinmzl.github.io/inside-india/](https://kathrinmzl.github.io/inside-india/)
+
 ### Local Development
 
 #### How to Fork
@@ -409,7 +407,6 @@ To clone the inside-india repository:
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
 - - -
-
 
 ## Credits
 
