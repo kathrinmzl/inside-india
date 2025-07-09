@@ -190,6 +190,22 @@ h1, h2, h3, h4 {
     background: url(../images/adventure-hero.webp) center 40%/cover no-repeat white; 
 }
 
+/* Carousel on tour pages */
+/* Limit the carousel to a max-height and center the image if it's too large */
+#carouselExampleIndicators {
+  width: 100%;
+  overflow: hidden;
+}
+
+#carouselExampleIndicators .carousel-item img {
+  width: 100%;
+  max-height: 650px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+
 
 /* Success Page */
 #success {
