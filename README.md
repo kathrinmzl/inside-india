@@ -426,4 +426,6 @@ Content for the website was written by myself and for the tour websites I used C
 ### Media
 All images were taken from the [Unsplash](https://unsplash.com/) website.
 
-The icon is taken from [flaticon](https://www.flaticon.com/free-icons/india-map). 
+The india map icon is taken from [flaticon](https://www.flaticon.com/free-icons/india-map). 
+
+The icons in the footer are taken from [Font Awesome](https://fontawesome.com/icons).
