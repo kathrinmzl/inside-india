@@ -184,7 +184,7 @@ Below the carousel is another booking button.
 ![Tour page](docs/features/tour-page.png)
 
 #### Booking page
-By clicking on any of the booking buttons within the website, the user opens the booking page. This page has a simpler look than the other pages and features an introductory text with some important information regarding a booking as well as a booking form.
+By clicking on any of the booking buttons within the website, the user opens the booking page. This page has a simpler look than the other pages and features an introductory text with some important information regarding the booking as well as a booking form.
 
 The booking form asks for basic personal information and the user is asked to select the tour they want to book. Optionally, the user can choose from the given dietary preferences and add a message.
 
@@ -309,6 +309,8 @@ Additionally, I changed the height of the hero images to 250px for small screens
 #### Final Scores
 Finally here are some scores for the final website. For the final test I also included the results for SEO.
 
+**Please note:** I changed the image files for the hero images again after adding the Lighthouse results here. The new images are of better quality and the performance results are very similar to before, so I didn't update all of the screenshots for the results.
+
 - Final Home Page Result for mobile and desktop screens:
   ![Lighthouse Result Home Final Mobile](docs/testing/lighthouse-home-final-mobile.png)
   ![Lighthouse Result Home Final Desktop](docs/testing/lighthouse-home-final-desktop.png)
@@ -331,9 +333,7 @@ Finally here are some scores for the final website. For the final test I also in
 
 
 ### Known Bugs 
-After changing the image sizes to improve the website performance, the problem remaining is that the quality of the photos shown is comparably low and might seem blurry, especially for the hero images. 
-
-Also the performance of the home page on mobile screens is still comparably low.
+The performance of the home page on mobile screens is still comparably low.
 
 - - -
 
