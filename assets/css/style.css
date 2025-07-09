@@ -255,4 +255,9 @@ h1, h2, h3, h4 {
 #tours .card {
   height: 150px;
 }
+/* Adjust the box so that it doesnt stick to the side of the screen */
+.tour-facts-bg {
+    margin: 0 1px;
+    padding: 2px;
+}
 }
