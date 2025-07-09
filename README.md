@@ -31,7 +31,7 @@ The website was created for educational purposes only.
 
 * [Testing](#Testing)
   * [Manual Testing](#Manual-Testing)
-  * [Code Validation](#Code Validation)
+  * [Code Validation](#Code-Validation)
   * [Lighthouse](#Lighthouse)
   * [User Story Testing](#User-Story-Testing)
   * [Known Bugs](#Known-Bugs)
@@ -136,10 +136,9 @@ Google Fonts was used for the following fonts:
 * Roboto is used for the body text. It is a sans-serif font.  
 
 ### Imagery 
+I chose the images on the website to fit the topic of each page but also to fit in the colour scheme to have a harmonious look and feel. 
 
-All images were taken from the [Unsplash](https://unsplash.com/) website.
-
-The icon is taken from [flaticon](https://www.flaticon.com/free-icons/india-map). 
+The icon I used is a map of India with the colours of the indian flag, to reflect the point that the travel website is only for tours through India. For the icon that's shown in the navbar I additionally included the company name, to make the logo more unique.
 
 ### Features
 
@@ -257,6 +256,8 @@ When I tested the first full version of the website I got the following errors/w
 - Success Page: no errors or warnings
 After fixing errors/warnings, there are no further error/warnings on any of the pages
 
+I retested the HTML after changing the code due to further test results and retested the final version again. The result showed some trailing slash warnings again, which I corrected.
+
 #### CSS
 The [Jigsaw W3C validator](https://jigsaw.w3.org/css-validator/) was used to validate the style.css file. 
 
@@ -264,19 +265,21 @@ When I tested the first full version of the website I got no errors.
 
 I also used the  [Auto Prefixer](https://autoprefixer.github.io/) on the final CSS Code.
 
+I retested the CSS after changing the code due to further test results and retested the final version again. The result no errors again.
+
 ### Lighthouse
 
 I used Lighthouse within the Chrome Developer Tools to allow me to test the performance, accessibility and best practices of the website.
 
-The initial test of the first version of the website showed overall good scores for Accessibility and Best practices, but a rather low score for Performance. Especially the home page had a very low performance score of 42%. The tour pages ranged between 70-74%, and the booking and success page had a good performance with scores of 95-100%.
+The initial test of the first version of the website (desktop) showed overall good scores for Accessibility and Best practices, but a rather low score for Performance. Especially the home page had a very low performance score of 42%. The tour pages ranged between 70-74%, and the booking and success page had a good performance with scores of 95-100%.
 
-Initial Home Page Result:
+Initial Home Page Result for desktop screens:
 
-![Lighthouse Result Home Initial](docs/testing/lighthouse-home-initial.png)
+![Lighthouse Result Home Initial](docs/testing/lighthouse-home-initial-desktop.png)
 
-Initial Adventure Tour Page Result:
+Initial Adventure Tour Page Result for desktop screens:
 
-![Lighthouse Result Adventure Tour Initial](docs/testing/lighthouse-adventure-initial.png)
+![Lighthouse Result Adventure Tour Initial](docs/testing/lighthouse-adventure-initial-desktop.png)
 
 [Remaining Lighthouse results can be found here](docs/testing)
 
@@ -289,13 +292,36 @@ The results for the accessibility score were mostly the same over all pages. Lig
 
 
 #### Best Practices
-Best practices showed the following warning:
+The results for the best practices score were mostly the same over all pages. Lighthouse showed the following warning:
 "Use of deprecated APIs “Found an `h1` tag within an `article`, `aside`, `nav`, or `section` which does not have a specified font-size. The size of this heading text will be changing in this browser in the near future.“
 
 As the `h1` was inside the header element, the use of a section wasn’t neccessary for semantic reasons, so I changed it so a div for all hero images.
 
-#### Performance TODO
+#### Performance 
+The performance was especially bad on the home page, but showed the same warning for all of the pages. Lighthouse showed that among others the bad performance was due to high LCP scores caused by large image sizes.
 
+I first tried to fix this by minimizing image sizes using [tinypng](https://tinypng.com/). This didn't improve the score enough, so I also transformed the jpg files into webp format by using [Birme](https://www.birme.net/). 
+
+For the home page the performance score was still too bad and the hero image still seemed to be the problem, because Lighthouse showed a bad LCP score for it. So I tried changing the code in a way that the hero image wouldn't be loaded as a background image in style.css, but that it would be directly displayed as an `img` in index.html. This way you can also preload the image, which is supposed to improve performance as well. Unfortunately this still didn't help.
+
+In the end I realised that I could minimize the size of all images even more if I download them in a "small" size directly from [Unsplash](https://unsplash.com/). Initially I had downloaded them using their original size. After minimizing and turning the images into webp format, this turned out to help a lot for desktop screens.
+
+Additionally, I changed the height of the hero images to 250px for small screens compared to 300px on larger screens, to improve performance results for mobiles as well. For the same reason I also adjusted the height of the circular image and the cards on the home page. In the end the performance reached a score of 79% for the home page on mobile screens and 100% for desktop screens.
+
+#### Final Scores
+Finally here are some scores for the final website.
+
+Final Home Page Result for mobile and desktop screens:
+
+![Lighthouse Result Home Final Mobile](docs/testing/lighthouse-home-final-mobile.png)
+![Lighthouse Result Home Final Desktop](docs/testing/lighthouse-home-final-desktop.png)
+
+Final Adventure Tour Page Result for mobile and desktop screens:
+
+![Lighthouse Result Adventure Tour Final Mobile](docs/testing/lighthouse-adventure-final-mobile.png)
+![Lighthouse Result Adventure Tour Final Desktop](docs/testing/lighthouse-adventure-final-desktop.png)
+
+[Remaining Lighthouse results can be found here](docs/testing)
 
 ### User Story Testing
 
@@ -308,7 +334,10 @@ As the `h1` was inside the header element, the use of a section wasn’t neccess
 | As a solo traveller I want to be able to contact the tour operator in case I need further information                            | There will be a separate page with a contact form to contact the tour operator. In the footer there will be links to socials and a Whatsapp number                                                                                              | &check; |
 
 
-### Known Bugs TODO
+### Known Bugs 
+After changing the image sizes to improve the website performance, the problem remaining is that the quality of the photos shown is comparably low and might seem blurry, especially for the hero images. 
+
+Also the performance of the home page on mobile screens is still comparably low.
 
 - - -
 
@@ -336,7 +365,7 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 [Tiny PNG](https://tinypng.com/) - To compress images
 
-[Birme](https://www.birme.net/) - To resize images and change to webp format
+[Birme](https://www.birme.net/) - To change to webp format
 
 [Favicon.io](https://favicon.io/) - To create favicon
 
@@ -382,15 +411,22 @@ To clone the inside-india repository:
 - - -
 
 
-## Credits TO DO
+## Credits
 
 ### Code Used
 
-* [Abi Harrison's Meta Tags webinar and repository](https://github.com/Abibubble/meta-tags-example)
+I developed the website based on the knowledge I gained through the walk-through projects provided by Code Institutes Module 1 on HTML and CSS. 
+
+I used the general settings of the navbar and footer from the [Boardwalk Games](https://github.com/kathrinmzl/boardwalk-games) project.
+The idea of the circular image on the home page comes from the [Love Running](https://github.com/kathrinmzl/love-running) project.
+
+I created the long lists of content on the tour pages with the help of ChatGPT to transform the written text into the right HTML format.
 
 ### Content
 
-Content for the website was written by the owner of Bully Book Club and Kera Cudmore.
+Content for the website was written by myself and for the tour websites I used ChatGPT to come up with the text for each step of the itinerary. I also used ChatGPT for the introductory text on the booking page.
 
 ### Media
+All images were taken from the [Unsplash](https://unsplash.com/) website.
 
+The icon is taken from [flaticon](https://www.flaticon.com/free-icons/india-map). 
