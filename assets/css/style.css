@@ -3,92 +3,106 @@
 
 /* CSS Variables */
 :root {
-    --primary-font: "Roboto", sans-serif;
-    --secondary-font: "Asar", cursive;
-    --primary-color: #361309 ; /* dark brown */
-    --secondary-color: #843913 ; /* medium brown */
-    --highlight-color: #976141; /* light brown */
-    --highlight-color-light: #c3cdcc ; /* light grey */
-    --highlight-color-light-transparent: #c3cdcc99 ; /* light grey transparent */
-    --text-background-color: #ebebeb; /*light grey background */
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Asar", cursive;
+  --primary-color: #361309;
+  /* dark brown */
+  --secondary-color: #843913;
+  /* medium brown */
+  --highlight-color: #976141;
+  /* light brown */
+  --highlight-color-light: #c3cdcc;
+  /* light grey */
+  --highlight-color-light-transparent: #c3cdcc99;
+  /* light grey transparent */
+  --text-background-color: #ebebeb;
+  /*light grey background */
 }
 
 
-/* Global styles */
+/* Global styles ----------------------- */
 body {
-    font-family: var(--primary-font);
-    padding-top: 56px; /* pushes the top of the header down under fixed navbar */
+  font-family: var(--primary-font);
+  /* pushes the top of the header down under fixed navbar */
+  padding-top: 56px;
 }
 
-h1, h2, h3, h4 {
-    font-family: var(--secondary-font);
-    color: var(--primary-color);
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
 }
 
 /* Hero image styles */
 .hero {
-  height: 300px; 
+  height: 300px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 7%; /* Horizontal only — avoids height bloating */
+  /* Horizontal only — avoids height bloating */
+  padding: 0 7%;
   color: white;
 }
 
 .hero-text-bg {
   background-color: var(--highlight-color-light-transparent);
   padding: 1rem 2rem;
-  margin: 0; /* Removes excessive space */
+  /* Removes excessive space */
+  margin: 0;
   display: inline-block;
 }
 
-/* Buttons */
+/* Buttons ----------------------- */
 /* General button style setup taken from Boardwalk games project */
 .custom-button-filled {
-    background-color: var(--highlight-color);
-    border:  var(--highlight-color);
-    color: white;
+  background-color: var(--highlight-color);
+  border: var(--highlight-color);
+  color: white;
 }
 
 .custom-button-filled:hover {
-    background-color: var(--secondary-color);
-    border:  var(--secondary-color);
-    color: white;
+  background-color: var(--secondary-color);
+  border: var(--secondary-color);
+  color: white;
 }
 
 .custom-button-outlined {
-    border:  2px solid white;
-    color: white;
+  border: 2px solid white;
+  color: white;
 }
 
 .custom-button-outlined:hover {
-    background-color: var(--highlight-color);
-    color: white;
+  background-color: var(--highlight-color);
+  color: white;
 }
 
 /* Bigger button on hero images */
 .button-big {
-    padding: 1% 3%;
-    font-size: 110%;
+  padding: 1% 3%;
+  font-size: 110%;
 }
 
-/* Navbar */
+/* Navbar ----------------------- */
 .navbar {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 /* Change the color of nav links for better contrast */
 .navbar .nav-link {
-  color: white; 
+  color: white;
 }
 
 /* Underline active links */
 .navbar .nav-link.active,
 .navbar .nav-link.show {
-  border-bottom: 1px solid white; /* underline */
-  padding-bottom: 2px; /* creates space between text and underline */
+  /* underline */
+  border-bottom: 1px solid white;
+  /* creates space between text and underline */
+  padding-bottom: 2px;
 }
 
 /* Hover effect */
@@ -97,52 +111,53 @@ h1, h2, h3, h4 {
 }
 
 .dropdown-menu {
-     background-color: var(--highlight-color);
+  background-color: var(--highlight-color);
 }
 
 .dropdown-menu .dropdown-item {
-     color: white;
-     background-color: var(--highlight-color);
+  color: white;
+  background-color: var(--highlight-color);
 }
 
 .dropdown-menu .dropdown-item:hover {
-     font-weight: bold;
-     background-color: var(--highlight-color);
+  font-weight: bold;
+  background-color: var(--highlight-color);
 }
 
-/* Header - Hero Image*/
+/* Header - Hero Image ----------------------- */
 #hero-home {
   background: url("../images/hero-home.webp") 50% 45% / cover no-repeat;
 }
 
-/* Main - Section: Introduction */
+/* Main - Section: Introduction ----------------------- */
 #intro .row {
-  min-height: 300px; 
+  min-height: 300px;
 }
 
 #intro-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #circle-img-bg {
-  width: 200px;  
+  width: 200px;
   height: 200px;
   background: url(../images/intro-image.webp) no-repeat 40% center / cover;
   border-radius: 50%;
-  margin: 0 auto 20px auto; /* centers block horizontally */
+  /* centers block horizontally */
+  margin: 0 auto 20px auto;
 }
 
-/* Main - Section: Tours */
+/* Main - Section: Tours ----------------------- */
 #tours {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 #tours .card {
@@ -153,40 +168,51 @@ h1, h2, h3, h4 {
 }
 
 #tours h3 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 #tour-spiritual {
-  background: url(../images/home-tour-1.webp) center center/cover no-repeat white;  
+  background: url(../images/home-tour-1.webp) center center/cover no-repeat white;
 }
 
 #tour-cultural {
-  background: url(../images/home-tour-2.webp) center center/cover no-repeat white;  
+  background: url(../images/home-tour-2.webp) center center/cover no-repeat white;
 }
 
 #tour-adventure {
-  background: url(../images/home-tour-3.webp) center center/cover no-repeat white;  
+  background: url(../images/home-tour-3.webp) center center/cover no-repeat white;
 }
 
+/* Hover effect when the whole card is hovered */
+.card-title {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card:hover .card-title {
+  /* Slight zoom */
+  transform: scale(1.1);
+}
+
+/* Tour Pages -----------------------  */
 /* Tour Facts */
 .tour-facts-bg {
-    background-color: var(--text-background-color);
-    padding: 20px;
+  background-color: var(--text-background-color);
+  padding: 20px;
 }
 
 /* Tour - Spiritual */
 #hero-spiritual {
-    background: url(../images/spiritual-hero.webp) center 40%/cover no-repeat white; 
+  background: url(../images/spiritual-hero.webp) center 40%/cover no-repeat white;
 }
 
 /* Tour - Cultural */
 #hero-cultural {
-    background: url(../images/cultural-hero.webp) center 40%/cover no-repeat white; 
+  background: url(../images/cultural-hero.webp) center 40%/cover no-repeat white;
 }
 
 /* Tour - Adventure */
 #hero-adventure {
-    background: url(../images/adventure-hero.webp) center 40%/cover no-repeat white; 
+  background: url(../images/adventure-hero.webp) center 40%/cover no-repeat white;
 }
 
 /* Carousel on tour pages */
@@ -204,97 +230,106 @@ h1, h2, h3, h4 {
   display: block;
 }
 
-/* Success Page */
+/* Success Page ----------------------- */
 #success {
-    padding: 4rem;
-    background: url(../images/success-img.webp) no-repeat center center / cover;
-    color: white;
-    max-width: 600px;
+  padding: 4rem;
+  background: url(../images/success-img.webp) no-repeat center center / cover;
+  color: white;
+  max-width: 600px;
 }
 
 #success h1 {
-    color: white;
+  color: white;
 }
 
-/* Booking page */
+/* Booking page ----------------------- */
 #booking-form {
-    background-color:  var(--text-background-color);
+  background-color: var(--text-background-color);
 }
 
-/* Footer */
+/* Footer ----------------------- */
 #footer {
-    background-color: var(--secondary-color);
-    color: white;
-    text-align: center;
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
 }
 
 .footer-heading-color {
-    color: var(--highlight-color-light);
+  color: var(--highlight-color-light);
 }
 
 #footer i {
-    color: var(--highlight-color);
-    font-size: 200%;
+  color: var(--highlight-color);
 }
 
-#footer .social-links i{
-    padding: 0 20px
+#footer .fa-whatsapp {
+  font-size: 1.5rem;
+}
+
+#footer .social-links i {
+  padding: 0 20px;
+  font-size: 2rem;
 }
 
 #footer .social-links i:hover {
-    color: var(--highlight-color-light);
+  color: var(--highlight-color-light);
 }
 
+/* Media queries for other screen sizes ----------------------- */
 /* Adjust styles for large screens */
 @media screen and (min-width: 1200px) {
+
   /* Adjust hero home image so that you see more of the sky */
   #hero-home {
-  background: url("../images/hero-home.webp") center 40% / cover no-repeat;
-}
+    background: url("../images/hero-home.webp") center 40% / cover no-repeat;
+  }
 }
 
 /* Adjust styles for medium screens */
 @media screen and (max-width: 768px) {
+
   /* Restrict height of the carousel items */
-#carouselExampleIndicators .carousel-item img {
-  max-height: 500px;
-}
+  #carouselExampleIndicators .carousel-item img {
+    max-height: 500px;
+  }
 }
 
 /* Adjust styles for small screens */
 @media screen and (max-width: 576px) {
+
   /* Adjust hero image height to improve performance of mobile screens */
   .hero {
-  height: 250px; 
-}
+    height: 250px;
+  }
 
- /* Adjust height of circular image */
-#circle-img-bg {
-  width: 150px;  
-  height: 150px;
-}
+  /* Adjust height of circular image */
+  #circle-img-bg {
+    width: 150px;
+    height: 150px;
+  }
 
- /* Adjust height of tour cards */
-#tours .card {
-  height: 150px;
-}
+  /* Adjust height of tour cards */
+  #tours .card {
+    height: 150px;
+  }
 
-/* Adjust the facts text field so that the grey border doesnt stick to the side of the screen */
-.tour-facts-bg {
+  /* Adjust the facts text field so that the grey border doesnt stick to the side of the screen */
+  .tour-facts-bg {
     margin: 0 1px;
     padding: 2px;
-}
+  }
 
-/* Restrict height of the carousel items */
-#carouselExampleIndicators .carousel-item img {
-  max-height: 420px;
-}
+  /* Restrict height of the carousel items */
+  #carouselExampleIndicators .carousel-item img {
+    max-height: 420px;
+  }
 }
 
 /* Adjust styles for extra small screens */
 @media screen and (max-width: 420px) {
-/* Restrict height of the carousel items */
-#carouselExampleIndicators .carousel-item img {
-  max-height: 300px;
-}
+
+  /* Restrict height of the carousel items */
+  #carouselExampleIndicators .carousel-item img {
+    max-height: 300px;
+  }
 }
