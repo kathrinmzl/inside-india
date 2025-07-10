@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Inside India is a travel company that offers curated travel packages to solo travellers who want to travel around India with a small group of likeminded travellers. Visit us to book your next adventure!" >
-    <meta name="keywords" content="India, travel agency, tour booking, small group trips, solo travellers, likeminded travellers, spiritual tours, cultural tours, adventure tours">
-        <title>Inside India | Home</title>
+        content="Inside India is a travel company that offers curated travel packages to solo travellers who want to travel around India with a small group of likeminded travellers. Visit us to book your next adventure!">
+    <meta name="keywords"
+        content="India, travel agency, tour booking, small group trips, solo travellers, likeminded travellers, spiritual tours, cultural tours, adventure tours">
+    <title>Inside India | Home</title>
 
     <!-- Favicons (logo) -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
@@ -17,10 +18,10 @@
 
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" >
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
     <!-- Custom CSS stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css" >
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <!-- Classes on body set to work with mt-auto on the footer to ensure it always stays at the bottom of the page -->
@@ -162,7 +163,7 @@
                 <div class="col-12 col-md-6">
                     <h3 class="footer-heading-color mt-2">Contact Us</h3>
                     <p>
-                        <i class="fa-brands fa-whatsapp"></i> +49 123 45 6789 0 <br >
+                        <i class="fa-brands fa-whatsapp"></i> +49 123 45 6789 0 <br>
                         <a href="" class="btn custom-button-outlined mt-3" data-bs-toggle="modal"
                             data-bs-target="#contactModal">Contact form</a>
                     </p>
@@ -203,15 +204,18 @@
                         <!-- Show success page after submitting the form -->
                         <div class="col-md-4">
                             <label for="contact-name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="contact-name" name="contact-name" required >
+                            <input type="text" class="form-control" id="contact-name" name="contact-name" required>
                         </div>
                         <div class="col-md-4">
                             <label for="contact-email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="contact-email" name="contact-email" required >
+                            <input type="email" class="form-control" id="contact-email" name="contact-email" required>
                         </div>
                         <div class="col-md-4">
                             <label for="contact-phone" class="form-label">Phone Number</label>
-                            <input type="text" class="form-control" id="contact-phone" name="contact-phone" required >
+                            <!-- Allow only at least one numeric input as phone no -->
+                            <!-- title: Warning message if non-numerical input is provided -->
+                            <input type="tel" class="form-control" id="contact-phone" name="contact-phone" pattern="\d+"
+                                inputmode="numeric" required title="Please only enter numbers">
                         </div>
                         <div class="col-12">
                             <label for="contact-message" class="form-label">Message</label>
