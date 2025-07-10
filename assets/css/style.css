@@ -1,5 +1,5 @@
 /* Import "Roboto" and "Asar" Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Asar&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Asar&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* CSS Variables */
 :root {
@@ -19,7 +19,6 @@
   /*light grey background */
 }
 
-
 /* Global styles ----------------------- */
 body {
   font-family: var(--primary-font);
@@ -37,7 +36,7 @@ h4 {
 
 /* Hero image styles */
 .hero {
-  height: 300px;
+  height: 250px;
   position: relative;
   display: flex;
   align-items: center;
@@ -147,8 +146,8 @@ h4 {
 }
 
 #circle-img-bg {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background: url(../images/intro-image.webp) no-repeat 40% center / cover;
   border-radius: 50%;
   /* centers block horizontally */
@@ -161,7 +160,7 @@ h4 {
 }
 
 #tours .card {
-  height: 200px;
+  height: 150px;
   border: none;
   background-size: cover;
   background-position: center;
@@ -197,22 +196,22 @@ h4 {
 /* Tour Facts */
 .tour-facts-bg {
   background-color: var(--text-background-color);
-  padding: 20px;
+  margin: 0 1px;
 }
 
 /* Tour - Spiritual */
 #hero-spiritual {
-  background: url(../images/spiritual-hero.webp) center 40%/cover no-repeat white;
+  background: url(../images/spiritual-hero.webp) center 40% / cover no-repeat white;
 }
 
 /* Tour - Cultural */
 #hero-cultural {
-  background: url(../images/cultural-hero.webp) center 40%/cover no-repeat white;
+  background: url(../images/cultural-hero.webp) center 40% / cover no-repeat white;
 }
 
 /* Tour - Adventure */
 #hero-adventure {
-  background: url(../images/adventure-hero.webp) center 40%/cover no-repeat white;
+  background: url(../images/adventure-hero.webp) center 40% / cover no-repeat white;
 }
 
 /* Carousel on tour pages */
@@ -224,7 +223,7 @@ h4 {
 
 #carouselExampleIndicators .carousel-item img {
   width: 100%;
-  max-height: 650px;
+  max-height: 300px;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -286,50 +285,44 @@ h4 {
 }
 
 /* Adjust styles for medium screens */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 
-  /* Restrict height of the carousel items */
+  /* Adjust hero image height */
+  .hero {
+    height: 300px;
+  }
+
+  /* Adjust height of circular image */
+  #circle-img-bg {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Adjust height of tour cards */
+  #tours .card {
+    height: 200px;
+  }
+
+  /* Give more space to carousel items */
+  #carouselExampleIndicators .carousel-item img {
+    max-height: 650px;
+  }
+}
+
+/* Adjust styles for small screens */
+@media screen and (min-width: 576px) {
+
+  /* Give more space to carousel items */
   #carouselExampleIndicators .carousel-item img {
     max-height: 500px;
   }
 }
 
 /* Adjust styles for small screens */
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 420px) {
 
-  /* Adjust hero image height to improve performance of mobile screens */
-  .hero {
-    height: 250px;
-  }
-
-  /* Adjust height of circular image */
-  #circle-img-bg {
-    width: 150px;
-    height: 150px;
-  }
-
-  /* Adjust height of tour cards */
-  #tours .card {
-    height: 150px;
-  }
-
-  /* Adjust the facts text field so that the grey border doesnt stick to the side of the screen */
-  .tour-facts-bg {
-    margin: 0 1px;
-    padding: 2px;
-  }
-
-  /* Restrict height of the carousel items */
+  /* Give more space to carousel items */
   #carouselExampleIndicators .carousel-item img {
     max-height: 420px;
-  }
-}
-
-/* Adjust styles for extra small screens */
-@media screen and (max-width: 420px) {
-
-  /* Restrict height of the carousel items */
-  #carouselExampleIndicators .carousel-item img {
-    max-height: 300px;
   }
 }

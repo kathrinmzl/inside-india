@@ -274,9 +274,11 @@ I used Lighthouse within the Chrome Developer Tools to allow me to test the perf
 The initial test of the first version of the website (desktop) showed overall good scores for Accessibility and Best practices, but a rather low score for Performance. Especially the home page had a very low performance score of 42%. The tour pages ranged between 70-74%, and the booking and success page had a good performance with scores of 95-100%.
 
 - Initial Home Page Result for desktop screens:
+
   ![Lighthouse Result Home Initial](docs/testing/lighthouse-home-initial-desktop.png)
 
 - Initial Adventure Tour Page Result for desktop screens:
+
   ![Lighthouse Result Adventure Tour Initial](docs/testing/lighthouse-adventure-initial-desktop.png)
 
 [Remaining Lighthouse results can be found here](docs/testing)
@@ -312,10 +314,12 @@ Finally here are some scores for the final website. For the final test I also in
 **Please note:** I changed the image files for the hero images again after adding the Lighthouse results here. The new images are of better quality and the performance results are very similar to before, so I didn't update all of the screenshots for the results.
 
 - Final Home Page Result for mobile and desktop screens:
+
   ![Lighthouse Result Home Final Mobile](docs/testing/lighthouse-home-final-mobile.png)
   ![Lighthouse Result Home Final Desktop](docs/testing/lighthouse-home-final-desktop.png)
 
 - Final Adventure Tour Page Result for mobile and desktop screens:
+
   ![Lighthouse Result Adventure Tour Final Mobile](docs/testing/lighthouse-adventure-final-mobile.png)
   ![Lighthouse Result Adventure Tour Final Desktop](docs/testing/lighthouse-adventure-final-desktop.png)
 

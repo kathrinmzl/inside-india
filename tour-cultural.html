@@ -137,8 +137,7 @@
         </section>
 
         <!-- Section: Details -->
-        <section id="details-spiritual" class="container px-sm-0">
-            <!-- px-sm-0 removes side padding on md screens -->
+        <section id="details-spiritual" class="container">
             <div class="row">
                 <!-- Tour description in list form -->
                 <div class="col-12 col-md-6 my-4">
@@ -297,61 +296,64 @@
                 <!-- Carousel with tour photos and Booking button -->
                 <div class="col-12 col-md-6 mb-4 my-md-4">
                     <!-- Carousel -->
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                                aria-label="Slide 5"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                                aria-label="Slide 6"></button>
+                    <div class="carousel-wrapper ms-auto" style="max-width: 550px">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                            </div>
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/cultural-car-taj.webp" class="d-block w-100"
+                                        alt="Woman in front of Taj Mahal" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/cultural-car-fort.webp" class="d-block w-100"
+                                        alt="Inside a fort in Rajasthan" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/cultural-car-jodhpur.webp" class="d-block w-100"
+                                        alt="View on the blue city of Jodhpur" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/cultural-car-rickshaw.webp" class="d-block w-100"
+                                        alt="Riskaw pullers having a break" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/cultural-car-cooking.webp" class="d-block w-100"
+                                        alt="Rajasthani man cooking in the desert" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/cultural-car-desert.webp" class="d-block w-100"
+                                        alt="Camels in the desert" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-inner rounded">
-                            <div class="carousel-item active">
-                                <img src="assets/images/cultural-car-taj.webp" class="d-block w-100"
-                                    alt="Woman in front of Taj Mahal" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/images/cultural-car-fort.webp" class="d-block w-100"
-                                    alt="Inside a fort in Rajasthan" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/images/cultural-car-jodhpur.webp" class="d-block w-100"
-                                    alt="View on the blue city of Jodhpur" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/images/cultural-car-rickshaw.webp" class="d-block w-100"
-                                    alt="Riskaw pullers having a break" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/images/cultural-car-cooking.webp" class="d-block w-100"
-                                    alt="Rajasthani man cooking in the desert" />
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/images/cultural-car-desert.webp" class="d-block w-100"
-                                    alt="Camels in the desert" />
-                            </div>
+                        <!-- Booking Button -->
+                        <div class="text-center">
+                            <a href="booking.html" class="btn custom-button-filled button-big my-4">Book your tour
+                                now!</a>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                    <!-- Booking Button -->
-                    <div class="text-center">
-                        <a href="booking.html" class="btn custom-button-filled button-big my-4">Book your tour now!</a>
                     </div>
                 </div>
             </div>
