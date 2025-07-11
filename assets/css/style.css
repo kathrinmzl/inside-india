@@ -10,6 +10,7 @@
   --secondary-color: #843913;
   /* medium brown */
   --highlight-color: #976141;
+  --highlight-color-footer: #b36b42;
   /* light brown */
   --highlight-color-light: #c3cdcc;
   /* light grey */
@@ -255,7 +256,7 @@ h4 {
 }
 
 #footer i {
-  color: var(--highlight-color);
+  color: var(--highlight-color-footer);
 }
 
 #footer .fa-whatsapp {
