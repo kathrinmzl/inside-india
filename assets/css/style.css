@@ -170,16 +170,10 @@ h4 {
   text-transform: uppercase;
 }
 
-#tour-spiritual {
-  background: url(../images/home-tour-1.webp) center center/cover no-repeat white;
-}
-
-#tour-cultural {
-  background: url(../images/home-tour-2.webp) center center/cover no-repeat white;
-}
-
-#tour-adventure {
-  background: url(../images/home-tour-3.webp) center center/cover no-repeat white;
+.card-text-bg {
+  background-color: var(--highlight-color-light-transparent);
+  padding: 0.4rem 0.8rem;
+  margin: 0;
 }
 
 /* Hover effect when the whole card is hovered */
@@ -192,13 +186,7 @@ h4 {
   transform: scale(1.1);
 }
 
-/* Tour Pages -----------------------  */
-/* Tour Facts */
-.tour-facts-bg {
-  background-color: var(--text-background-color);
-  margin: 0 1px;
-}
-
+/* Card images used on tour pages as well */
 /* Tour - Spiritual */
 #hero-spiritual {
   background: url(../images/spiritual-hero.webp) center 40% / cover no-repeat white;
@@ -212,6 +200,13 @@ h4 {
 /* Tour - Adventure */
 #hero-adventure {
   background: url(../images/adventure-hero.webp) center 40% / cover no-repeat white;
+}
+
+/* Tour Pages -----------------------  */
+/* Tour Facts */
+.tour-facts-bg {
+  background-color: var(--text-background-color);
+  margin: 0 1px;
 }
 
 /* Carousel on tour pages */
