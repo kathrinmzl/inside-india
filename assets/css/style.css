@@ -168,6 +168,7 @@ h4 {
 
 #tours h3 {
   text-transform: uppercase;
+  color: var(--primary-color);
 }
 
 .card-text-bg {
