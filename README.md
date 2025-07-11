@@ -157,7 +157,7 @@ As the tour pages belong together in terms of their content, they have been grou
 The navbar features also a link to a contact modal as well as a link to the booking page, which has been highlighted as a button to act as a call for action.
 
 #### Header
-The home page and the tour pages each include a hero image in their header, which supports the topic of the respective page.
+The home page and the tour pages each include a hero image in their header, which supports the topic of the respective page and attract attention.
 
 All of the hero sections include a catch phrase as `h1`, which have a light transparent background to improve readability. They also feature a booking button as call to action.
 
@@ -170,13 +170,14 @@ The footer includes contact and social media information. In the contact section
 
 #### Home page
 
-The home page includes a section showcasing that it is a website for small curated group tours through India. It also includes a section with a preview of available tours. The images for each tour are clickable and link to  the respective tour page.
+The home page includes a hero image to attract the viewers attention as well as a section showcasing that it is a website for small curated group tours through India. It also includes a section with a preview of available tours. The images for each tour are clickable and link to the respective tour page.
 
 ![Home page](docs/features/home-page.png)
 
 #### Tour pages
 For each tour package there is a separate page displaying general facts about the tour, detailed information about the trips’ itineraries and a gallery of tour highlights. 
 
+The hero image of each tour page is the same as the card image on the home page to keep the imagery consistent.
 The pages are divided into a "facts" section, with an overview of the most important information like the price and dates, and a "tour details" section with a detail section for each place on the itinerary. Next to the details there is a carousel with each six photos representing steps in the itinerary. 
 
 Below the carousel is another booking button.
@@ -184,7 +185,7 @@ Below the carousel is another booking button.
 ![Tour page](docs/features/tour-page.png)
 
 #### Booking page
-By clicking on any of the booking buttons within the website, the user opens the booking page. This page has a simpler look than the other pages and features an introductory text with some important information regarding the booking as well as a booking form.
+By clicking any of the booking buttons within the website, the user opens the booking page. This page has a simpler look than the other pages and features an introductory text with some important information regarding the booking as well as a booking form.
 
 The booking form asks for basic personal information and the user is asked to select the tour they want to book. Optionally, the user can choose from the given dietary preferences and add a message.
 
@@ -228,6 +229,7 @@ I manually tested all pages of the website throughout the entire build. I utilis
 When I had my first full version of the website I deployed it to github pages to test it in deployment as well. I realised I should have done that earlier because the performance wasn't good enough, as some of the images took a while to load.
 
 I also tested the deployed website in Microsoft Edge, as this is the only other browser I have installed on my laptop and on my own mobile phone, Google Pixel 7.
+Friends tested the website additionally in the Safari browser and iPhones.
 
 Besides testing the responsiveness of the website I also tested the following:
 
@@ -256,7 +258,7 @@ When I tested the first full version of the website I got the following errors/w
     - Fixed duplicate IDs by renaming the IDs for the booking form
 - Success Page: no errors or warnings
 
-After changing the code due to further test results and retested the final HTML version. The result showed some trailing slash warnings again, which I corrected.
+After changing the code due to further test results I retested the final HTML version. The result showed some trailing slash warnings again, which I corrected.
 
 #### CSS
 The [Jigsaw W3C validator](https://jigsaw.w3.org/css-validator/) was used to validate the style.css file. 
@@ -265,13 +267,15 @@ When I tested the first full version of the website I got no errors.
 
 I also used the  [Auto Prefixer](https://autoprefixer.github.io/) on the final CSS Code.
 
-After changing the code due to further test results and retested the final CSS version. The result showed no errors again.
+After changing the code due to further test results I retested the final CSS version. The result showed no errors again.
 
 ### Lighthouse
 
-I used Lighthouse within the Chrome Developer Tools to allow me to test the performance, accessibility and best practices of the website.
+I used Lighthouse within the Chrome Developer Tools to allow me to test the performance, accessibility, best practices and SEO of the website.
 
-The initial test of the first version of the website (desktop) showed overall good scores for Accessibility and Best practices, but a rather low score for Performance. Especially the home page had a very low performance score of 42%. The tour pages ranged between 70-74%, and the booking and success page had a good performance with scores of 95-100%.
+The initial test of the first version of the website (desktop) showed overall good scores for Accessibility and Best practices (I didnt include SEO at the beginning), but a rather low score for Performance. Especially the home page had a very low performance score of 42%. The tour pages ranged between 70-74%, and the booking and success page had a good performance with scores of 95-100%.
+
+At the initial test I wasn't aware of the fact that you can/have to differentiate between testing a mobile and desktop version, so I only have results for the desktop version.
 
 - Initial Home Page Result for desktop screens:
 
@@ -292,10 +296,16 @@ The results for the accessibility score were mostly the same over all pages. Lig
 
 
 #### Best Practices
-The results for the best practices score were mostly the same over all pages. Lighthouse showed the following warning:
+The results for the best practices score (81%) were mostly the same over all pages, except the booking page (100%). 
+
+Lighthouse showed the following warning:
 "Use of deprecated APIs - Found an `h1` tag within an `article`, `aside`, `nav`, or `section` which does not have a specified font-size. The size of this heading text will be changing in this browser in the near future.“
 
+Home and tour pages:
 As the `h1` was inside the header element, the use of a section wasn’t neccessary for semantic reasons, so I changed it to a div for all hero images.
+
+Success page:
+I added a font size for the `h1`, because the section was neccessary here for semantic reasons. Unfortunately after this the warning was still there. As I was running out of time this warning is left to be solved in the future.
 
 #### Performance 
 The performance was especially bad on the home page, but showed the same warning for all of the pages. Lighthouse showed that among others the bad performance was due to high LCP scores caused by large image sizes of the hero images.
@@ -304,14 +314,13 @@ I first tried to fix this by minimizing image sizes using [tinypng](https://tiny
 
 For the home page the performance score was still too bad and the hero image still seemed to be the problem, because Lighthouse still showed a bad LCP score for it. So I tried changing the code in a way that the hero image wouldn't be loaded as a background image in style.css, but that it would be directly displayed as an `img` in index.html. This way you can also preload the image, which is supposed to improve performance as well. Unfortunately this still didn't help.
 
-In the end I realised that I could minimize the size of all images even more if I download them in a "small" size directly from [Unsplash](https://unsplash.com/). Initially I had downloaded them using their original size. After minimizing and turning the images into webp format, this turned out to help a lot for desktop screens.
+In the end I realised that the problem might not be only the hero image but the size of all images. Also I had downloaded all images in their original size, but saw that I can download them in a "small" size directly from [Unsplash](https://unsplash.com/).  After minimizing and turning the images into webp format, this turned out to help a lot for desktop screens.
 
-Additionally, I changed the height of the hero images to 250px for small screens compared to 300px on larger screens, to improve performance results for mobiles as well. For the same reason I also adjusted the height of the circular image and the cards on the home page. In the end the performance reached a score of 79% for the home page on mobile screens and 100% for desktop screens.
+Additionally, I changed the height of the hero images to 250px for small screens compared to 300px on larger screens, to improve performance results for mobiles as well. For the same reason I also adjusted the height of the circular image and the cards on the home page as well as the height of the carousel on the tour pages for different screen sizes.
+In the end the performance reached a satisfying score for both screen types.
 
 #### Final Scores
 Finally here are some scores for the final website. For the final test I also included the results for SEO.
-
-**Please note:** I changed the image files for the hero images again after adding the Lighthouse results here. The new images are of better quality and the performance results are very similar to before, so I didn't update all of the screenshots for the results.
 
 - Final Home Page Result for mobile and desktop screens:
 
@@ -337,7 +346,9 @@ Finally here are some scores for the final website. For the final test I also in
 
 
 ### Known Bugs 
-The performance of the home page on mobile screens is still comparably low.
+In Lighthouse testing there is still the following warning on "Best Practices" on the success page: 
+
+"Use of deprecated APIs - Found an `h1` tag within an `article`, `aside`, `nav`, or `section` which does not have a specified font-size. The size of this heading text will be changing in this browser in the near future.“
 
 - - -
 
