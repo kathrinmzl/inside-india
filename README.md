@@ -124,7 +124,7 @@ highlight-color: #976141
 
 The website uses a palette of brown colours and one light grey highlight colour, that was created by picking colours from the main hero image using the [imagecolorpicker](https://imagecolorpicker.com/) website. These colours give the website a warm and earthy feeling. Most other images and especially the other hero images for the tour pages where chosen to match that topic. 
 
-Additionally I chose one transparent background color for text backgrounds on images (#c3cdcc99) and another very light grey background color for other text paragraphs (#ebebeb).
+Additionally I chose one transparent background color for text backgrounds on images (#c3cdcc99), a lighter brown for the icons in the footer (#b36b42) and very light grey background color for other text paragraphs (#ebebeb).
 
 ### Typography
 
